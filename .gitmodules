@@ -1,0 +1,3 @@
+[submodule "Training/training/QAT"]
+	path = Training/training/QAT
+	url = git@github.com:embedded-machine-learning/FastQATforPOTRescaler.git

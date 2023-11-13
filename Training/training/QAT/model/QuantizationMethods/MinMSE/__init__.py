@@ -1,0 +1,2 @@
+from .convolution_weight_quantization import LinQuantWeight_mod_MinMSE as MinMSE_convolution_weight_quantization
+from .linear_weight_quantization import LinQuantWeight_mod_MinMSE as MinMSE_linear_weight_quantization

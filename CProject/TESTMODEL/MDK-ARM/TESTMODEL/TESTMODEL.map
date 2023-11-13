@@ -1,0 +1,1159 @@
+Component: Arm Compiler for Embedded 6.18 Tool: armlink [5e4cc100]
+
+==============================================================================
+
+Section Cross References
+
+    startup_stm32f303x8.o(RESET) refers to startup_stm32f303x8.o(STACK) for __initial_sp
+    startup_stm32f303x8.o(RESET) refers to startup_stm32f303x8.o(.text) for Reset_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.NMI_Handler) for NMI_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.HardFault_Handler) for HardFault_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.MemManage_Handler) for MemManage_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.BusFault_Handler) for BusFault_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.UsageFault_Handler) for UsageFault_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.SVC_Handler) for SVC_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.PendSV_Handler) for PendSV_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-20067c.o(.text.TIM2_IRQHandler) for TIM2_IRQHandler
+    startup_stm32f303x8.o(.text) refers to lto-llvm-20067c.o(.text.SystemInit) for SystemInit
+    startup_stm32f303x8.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to lto-llvm-20067c.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    __0scanf.o(.text) refers to scanf_char_file.o(.text) for __vfscanf_char_file
+    __0scanf.o(.text) refers to stdin.o(.data) for __stdin
+    _scanf_int.o(.text) refers to _chval.o(.text) for _chval
+    scanf_fp.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    scanf_fp.o(.text) refers to dfltul.o(.text) for __aeabi_ul2d
+    scanf_fp.o(.text) refers to dmul.o(.text) for __aeabi_dmul
+    scanf_fp.o(.text) refers to ddiv.o(.text) for __aeabi_ddiv
+    scanf_fp.o(.text) refers to scanf_fp.o(i._is_digit) for _is_digit
+    scanf_fp.o(.text) refers to d2f.o(.text) for __aeabi_d2f
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_stm32f303x8.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32f303x8.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to lto-llvm-20067c.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to lto-llvm-20067c.o(.text.main) for main
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    scanf_char_file.o(.text) refers to scanf_char.o(.text) for __vfscanf_char
+    scanf_char_file.o(.text) refers to lto-llvm-20067c.o(.text.fgetc) for fgetc
+    scanf_char_file.o(.text) refers to fgetc_b.o(.text) for __backspace
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    dfltul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfixul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+    fgetc_b.o(.text) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc_b.o(.text) refers (Special) to semi.o(.text) for __semihosting_library_function
+    fgetc_b.o(.text) refers to fgetc_b.o(.data) for .data
+    fgetc_b.o(.data) refers (Special) to iusesemig.o(.text) for __I$use$semihosting$fgetc
+    fgetc_b.o(.data) refers (Special) to semi.o(.text) for __semihosting_library_function
+    scanf_char.o(.text) refers to _scanf.o(.text) for __vfscanf
+    scanf_char.o(.text) refers to isspace_c.o(.text) for isspace
+    fepilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    isspace_c.o(.text) refers to ctype_c.o(.text) for __ctype_lookup
+    _scanf.o(.text) refers (Weak) to scanf_fp.o(.text) for _scanf_real
+    _scanf.o(.text) refers (Weak) to _scanf_int.o(.text) for _scanf_int
+    ctype_c.o(.text) refers to ctype_c.o(.constdata) for .constdata
+    lto-llvm-20067c.o(.text) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.getCurrentMicros) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.getCurrentMicros) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.getCurrentMicros) refers to lto-llvm-20067c.o(.bss) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.ARM.exidx.text.getCurrentMicros) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.getCurrentMicros) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.getCurrentMicros) refers to lto-llvm-20067c.o(.text.getCurrentMicros) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.main) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.main) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text.HAL_InitTick) for HAL_InitTick
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq) for HAL_RCC_GetSysClockFreq
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq) for HAL_RCC_GetPCLK1Freq
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    lto-llvm-20067c.o(.text.main) refers to printfa.o(i.__0printf) for __2printf
+    lto-llvm-20067c.o(.text.main) refers to __0scanf.o(.text) for __0scanf
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text.HAL_Delay) for HAL_Delay
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text.getCurrentMicros) for getCurrentMicros
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii) for very_ugly_Linear(short const*, signed char const*, int const*, int const*, void (*)(int, int, void*), unsigned int, void*, int, int, int)
+    lto-llvm-20067c.o(.text.main) refers to dfltui.o(.text) for __aeabi_ui2d
+    lto-llvm-20067c.o(.text.main) refers to dadd.o(.text) for __aeabi_dsub
+    lto-llvm-20067c.o(.text.main) refers to ddiv.o(.text) for __aeabi_ddiv
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text.Error_Handler) for Error_Handler
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.bss) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.data) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.rodata) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text._Z15fc2_ACT_garbageiiPv) for fc2_ACT_garbage(int, int, void*)
+    lto-llvm-20067c.o(.text.main) refers to lto-llvm-20067c.o(.text._Z15fc3_ACT_garbageiiPv) for fc3_ACT_garbage(int, int, void*)
+    lto-llvm-20067c.o(.ARM.exidx.text.main) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.main) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.main) refers to lto-llvm-20067c.o(.text.main) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.Error_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.Error_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.Error_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.Error_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.Error_Handler) refers to lto-llvm-20067c.o(.text.Error_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.fputc) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.fputc) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.fputc) refers to lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    lto-llvm-20067c.o(.text.fputc) refers to lto-llvm-20067c.o(.bss) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.ARM.exidx.text.fputc) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.fputc) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.fputc) refers to lto-llvm-20067c.o(.text.fputc) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.fgetc) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.fgetc) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.fgetc) refers to lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    lto-llvm-20067c.o(.text.fgetc) refers to lto-llvm-20067c.o(.bss) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.ARM.exidx.text.fgetc) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.fgetc) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.fgetc) refers to lto-llvm-20067c.o(.text.fgetc) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.NMI_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.NMI_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.NMI_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.NMI_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.NMI_Handler) refers to lto-llvm-20067c.o(.text.NMI_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.HardFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.HardFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.HardFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.HardFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.HardFault_Handler) refers to lto-llvm-20067c.o(.text.HardFault_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.MemManage_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.MemManage_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.MemManage_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.MemManage_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.MemManage_Handler) refers to lto-llvm-20067c.o(.text.MemManage_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.BusFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.BusFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.BusFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.BusFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.BusFault_Handler) refers to lto-llvm-20067c.o(.text.BusFault_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.UsageFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.UsageFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.UsageFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.UsageFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.UsageFault_Handler) refers to lto-llvm-20067c.o(.text.UsageFault_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.SVC_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.SVC_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.SVC_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.SVC_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.SVC_Handler) refers to lto-llvm-20067c.o(.text.SVC_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.DebugMon_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.DebugMon_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.DebugMon_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.DebugMon_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.DebugMon_Handler) refers to lto-llvm-20067c.o(.text.DebugMon_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.PendSV_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.PendSV_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.PendSV_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.PendSV_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.PendSV_Handler) refers to lto-llvm-20067c.o(.text.PendSV_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.SysTick_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.SysTick_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.SysTick_Handler) refers to lto-llvm-20067c.o(.bss) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.ARM.exidx.text.SysTick_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.SysTick_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.SysTick_Handler) refers to lto-llvm-20067c.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.TIM2_IRQHandler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.TIM2_IRQHandler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.TIM2_IRQHandler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.TIM2_IRQHandler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.TIM2_IRQHandler) refers to lto-llvm-20067c.o(.text.TIM2_IRQHandler) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text._Z15fc2_ACT_garbageiiPv) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text._Z15fc2_ACT_garbageiiPv) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text._Z15fc2_ACT_garbageiiPv) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text._Z15fc2_ACT_garbageiiPv) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text._Z15fc2_ACT_garbageiiPv) refers to lto-llvm-20067c.o(.text._Z15fc2_ACT_garbageiiPv) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text._Z15fc3_ACT_garbageiiPv) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text._Z15fc3_ACT_garbageiiPv) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text._Z15fc3_ACT_garbageiiPv) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text._Z15fc3_ACT_garbageiiPv) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text._Z15fc3_ACT_garbageiiPv) refers to lto-llvm-20067c.o(.text._Z15fc3_ACT_garbageiiPv) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii) refers to lto-llvm-20067c.o(.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.HAL_InitTick) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.HAL_InitTick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.HAL_InitTick) refers to lto-llvm-20067c.o(.data) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_InitTick) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_InitTick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_InitTick) refers to lto-llvm-20067c.o(.text.HAL_InitTick) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.HAL_Delay) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.HAL_Delay) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.HAL_Delay) refers to lto-llvm-20067c.o(.bss) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_Delay) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_Delay) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_Delay) refers to lto-llvm-20067c.o(.text.HAL_Delay) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers to lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq) refers to lto-llvm-20067c.o(.data) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers to lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.UART_WaitOnFlagUntilTimeout) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.UART_WaitOnFlagUntilTimeout) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.UART_WaitOnFlagUntilTimeout) refers to lto-llvm-20067c.o(.bss) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers to lto-llvm-20067c.o(.text.UART_WaitOnFlagUntilTimeout) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.SystemInit) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.SystemInit) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.SystemInit) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.SystemInit) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.SystemInit) refers to lto-llvm-20067c.o(.text.SystemInit) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_0) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_0) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_0) refers to lto-llvm-20067c.o(.text.UART_WaitOnFlagUntilTimeout) for UART_WaitOnFlagUntilTimeout
+    lto-llvm-20067c.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_1) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_1) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_1) refers to lto-llvm-20067c.o(.text.UART_WaitOnFlagUntilTimeout) for UART_WaitOnFlagUntilTimeout
+    lto-llvm-20067c.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers to lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_1) for [Anonymous Symbol]
+    lto-llvm-20067c.o(.bss) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.bss) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.ARM.use_no_argv) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.ARM.use_no_argv) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.rodata) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.rodata) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-20067c.o(.data) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-20067c.o(.data) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    scanf_fp.o(i._is_digit) refers (Special) to iusefp.o(.text) for __I$use$fp
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_stm32f303x8.o(HEAP), (512 bytes).
+    Removing lto-llvm-20067c.o(.text), (0 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.getCurrentMicros), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.main), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.Error_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.fputc), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.fgetc), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.MemManage_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.BusFault_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.UsageFault_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.DebugMon_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.TIM2_IRQHandler), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text._Z15fc2_ACT_garbageiiPv), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text._Z15fc3_ACT_garbageiiPv), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.HAL_InitTick), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.HAL_Delay), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
+    Removing lto-llvm-20067c.o(.ARM.use_no_argv), (4 bytes).
+
+29 unused section(s) (total 724 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_c.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_c.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/stubs.s          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    ../clib/microlib/stdio/fgetc.c           0x00000000   Number         0  fgetc_b.o ABSOLUTE
+    ../clib/microlib/stdio/semi.s            0x00000000   Number         0  semi.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdin.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemig.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  __0scanf.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _scanf_int.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  scanf_fp.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _chval.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  scanf_char_file.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  scanf_char.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _scanf.o ABSOLUTE
+    ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltul.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltui.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    ld-temp.o                                0x00000000   Number         0  lto-llvm-20067c.o ABSOLUTE
+    startup_stm32f303x8.s                    0x00000000   Number         0  startup_stm32f303x8.o ABSOLUTE
+    RESET                                    0x08000000   Section      392  startup_stm32f303x8.o(RESET)
+    .ARM.Collect$$$$00000000                 0x08000188   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x08000188   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x0800018c   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x08000190   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x08000190   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x08000190   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x08000198   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .ARM.Collect$$$$0000000D                 0x08000198   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x08000198   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x08000198   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    $v0                                      0x0800019c   Number         0  startup_stm32f303x8.o(.text)
+    .text                                    0x0800019c   Section       36  startup_stm32f303x8.o(.text)
+    .text                                    0x080001c0   Section        0  __0scanf.o(.text)
+    .text                                    0x080001e0   Section        0  _scanf_int.o(.text)
+    _fp_value                                0x0800032d   Thumb Code   296  scanf_fp.o(.text)
+    .text                                    0x0800032c   Section        0  scanf_fp.o(.text)
+    .text                                    0x0800068c   Section        0  uidiv.o(.text)
+    .text                                    0x080006b8   Section        0  uldiv.o(.text)
+    .text                                    0x0800071a   Section        0  _chval.o(.text)
+    .text                                    0x08000738   Section        0  scanf_char_file.o(.text)
+    .text                                    0x0800074c   Section        0  iusefp.o(.text)
+    .text                                    0x0800074c   Section        0  dadd.o(.text)
+    .text                                    0x0800089a   Section        0  dmul.o(.text)
+    .text                                    0x0800097e   Section        0  ddiv.o(.text)
+    .text                                    0x08000a5c   Section        0  dfltul.o(.text)
+    .text                                    0x08000a74   Section        0  dfixul.o(.text)
+    .text                                    0x08000aa4   Section       48  cdrcmple.o(.text)
+    .text                                    0x08000ad4   Section        0  d2f.o(.text)
+    .text                                    0x08000b0c   Section       36  init.o(.text)
+    .text                                    0x08000b30   Section        0  fgetc_b.o(.text)
+    .text                                    0x08000b5c   Section        0  llshl.o(.text)
+    .text                                    0x08000b7a   Section        0  llushr.o(.text)
+    .text                                    0x08000b9a   Section        0  llsshr.o(.text)
+    _scanf_char_input                        0x08000bc1   Thumb Code    12  scanf_char.o(.text)
+    .text                                    0x08000bc0   Section        0  scanf_char.o(.text)
+    .text                                    0x08000be8   Section        0  fepilogue.o(.text)
+    .text                                    0x08000c56   Section        0  depilogue.o(.text)
+    .text                                    0x08000d10   Section        0  semi.o(.text)
+    .text                                    0x08000d10   Section        0  isspace_c.o(.text)
+    .text                                    0x08000d1c   Section        0  _scanf.o(.text)
+    .text                                    0x08001048   Section        0  iusesemig.o(.text)
+    .text                                    0x08001048   Section        0  ctype_c.o(.text)
+    .text                                    0x08001070   Section        0  dfltui.o(.text)
+    [Anonymous Symbol]                       0x0800108a   Section        0  lto-llvm-20067c.o(.text.BusFault_Handler)
+    [Anonymous Symbol]                       0x0800108c   Section        0  lto-llvm-20067c.o(.text.DebugMon_Handler)
+    Error_Handler                            0x0800108f   Thumb Code     8  lto-llvm-20067c.o(.text.Error_Handler)
+    [Anonymous Symbol]                       0x0800108e   Section        0  lto-llvm-20067c.o(.text.Error_Handler)
+    HAL_Delay                                0x08001099   Thumb Code    16  lto-llvm-20067c.o(.text.HAL_Delay)
+    [Anonymous Symbol]                       0x08001098   Section        0  lto-llvm-20067c.o(.text.HAL_Delay)
+    HAL_InitTick                             0x080010a9   Thumb Code    88  lto-llvm-20067c.o(.text.HAL_InitTick)
+    [Anonymous Symbol]                       0x080010a8   Section        0  lto-llvm-20067c.o(.text.HAL_InitTick)
+    __arm_cp.18_1                            0x08001100   Number         4  lto-llvm-20067c.o(.text.HAL_InitTick)
+    __arm_cp.18_2                            0x08001104   Number         4  lto-llvm-20067c.o(.text.HAL_InitTick)
+    HAL_RCC_GetPCLK1Freq                     0x08001109   Thumb Code    20  lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq)
+    [Anonymous Symbol]                       0x08001108   Section        0  lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq)
+    __arm_cp.21_0                            0x0800111c   Number         4  lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq)
+    __arm_cp.21_1                            0x08001120   Number         4  lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq)
+    APBPrescTable                            0x08001124   Number         0  lto-llvm-20067c.o(.text.HAL_RCC_GetPCLK1Freq)
+    HAL_RCC_GetSysClockFreq                  0x0800112d   Thumb Code    52  lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq)
+    [Anonymous Symbol]                       0x0800112c   Section        0  lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq)
+    __arm_cp.20_0                            0x08001160   Number         4  lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq)
+    __arm_cp.20_1                            0x08001164   Number         4  lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq)
+    aPLLMULFactorTable                       0x08001168   Number         0  lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq)
+    aPredivFactorTable                       0x08001178   Number         0  lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq)
+    __arm_cp.20_4                            0x08001188   Number         4  lto-llvm-20067c.o(.text.HAL_RCC_GetSysClockFreq)
+    [Anonymous Symbol]                       0x0800118c   Section        0  lto-llvm-20067c.o(.text.HardFault_Handler)
+    [Anonymous Symbol]                       0x0800118e   Section        0  lto-llvm-20067c.o(.text.MemManage_Handler)
+    [Anonymous Symbol]                       0x08001190   Section        0  lto-llvm-20067c.o(.text.NMI_Handler)
+    OUTLINED_FUNCTION_0                      0x08001193   Thumb Code     8  lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_0)
+    [Anonymous Symbol]                       0x08001192   Section        0  lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_0)
+    OUTLINED_FUNCTION_1                      0x0800119b   Thumb Code    10  lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_1)
+    [Anonymous Symbol]                       0x0800119a   Section        0  lto-llvm-20067c.o(.text.OUTLINED_FUNCTION_1)
+    [Anonymous Symbol]                       0x080011a4   Section        0  lto-llvm-20067c.o(.text.PendSV_Handler)
+    [Anonymous Symbol]                       0x080011a6   Section        0  lto-llvm-20067c.o(.text.SVC_Handler)
+    [Anonymous Symbol]                       0x080011a8   Section        0  lto-llvm-20067c.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x080011b4   Section        0  lto-llvm-20067c.o(.text.SystemInit)
+    __arm_cp.23_0                            0x080011c0   Number         4  lto-llvm-20067c.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x080011c4   Section        0  lto-llvm-20067c.o(.text.TIM2_IRQHandler)
+    UART_WaitOnFlagUntilTimeout              0x080011c9   Thumb Code   152  lto-llvm-20067c.o(.text.UART_WaitOnFlagUntilTimeout)
+    [Anonymous Symbol]                       0x080011c8   Section        0  lto-llvm-20067c.o(.text.UART_WaitOnFlagUntilTimeout)
+    [Anonymous Symbol]                       0x08001260   Section        0  lto-llvm-20067c.o(.text.UsageFault_Handler)
+    fc2_ACT_garbage(int, int, void*)         0x08001263   Thumb Code    20  lto-llvm-20067c.o(.text._Z15fc2_ACT_garbageiiPv)
+    [Anonymous Symbol]                       0x08001262   Section        0  lto-llvm-20067c.o(.text._Z15fc2_ACT_garbageiiPv)
+    fc3_ACT_garbage(int, int, void*)         0x08001277   Thumb Code     6  lto-llvm-20067c.o(.text._Z15fc3_ACT_garbageiiPv)
+    [Anonymous Symbol]                       0x08001276   Section        0  lto-llvm-20067c.o(.text._Z15fc3_ACT_garbageiiPv)
+    very_ugly_Linear(short const*, signed char const*, int const*, int const*, void (*)(int, int, void*), unsigned int, void*, int, int, int) 0x0800127d   Thumb Code   218  lto-llvm-20067c.o(.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii)
+    [Anonymous Symbol]                       0x0800127c   Section        0  lto-llvm-20067c.o(.text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii)
+    [Anonymous Symbol]                       0x08001358   Section        0  lto-llvm-20067c.o(.text.fgetc)
+    __arm_cp.4_1                             0x08001408   Number         4  lto-llvm-20067c.o(.text.fgetc)
+    [Anonymous Symbol]                       0x0800140c   Section        0  lto-llvm-20067c.o(.text.fputc)
+    __arm_cp.3_0                             0x0800148c   Number         4  lto-llvm-20067c.o(.text.fputc)
+    getCurrentMicros                         0x08001491   Thumb Code    52  lto-llvm-20067c.o(.text.getCurrentMicros)
+    [Anonymous Symbol]                       0x08001490   Section        0  lto-llvm-20067c.o(.text.getCurrentMicros)
+    __arm_cp.0_0                             0x080014c4   Number         4  lto-llvm-20067c.o(.text.getCurrentMicros)
+    __arm_cp.0_1                             0x080014c8   Number         4  lto-llvm-20067c.o(.text.getCurrentMicros)
+    [Anonymous Symbol]                       0x080014d0   Section        0  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_41                            0x08001864   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_43                            0x0800186c   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_44                            0x08001870   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_45                            0x08001874   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_46                            0x08001878   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_48                            0x08001880   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_49                            0x08001884   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_50                            0x08001888   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_51                            0x0800188c   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_52                            0x08001b9c   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_53                            0x08001ba0   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_5                             0x08001ce0   Number         4  lto-llvm-20067c.o(.text.main)
+    AHBPrescTable                            0x08001ce4   Number         0  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_7                             0x08001cf4   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_10                            0x08001cf8   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_15                            0x08001cfc   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_16                            0x08001d00   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_17                            0x08001d04   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_18                            0x08001d08   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_19                            0x08001d0c   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_20                            0x08001d10   Number         4  lto-llvm-20067c.o(.text.main)
+    decoder                                  0x08001d14   Number         0  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_22                            0x08001d24   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_23                            0x08001d28   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_25                            0x08001d34   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_27                            0x08001d3c   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_28                            0x08001d40   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_29                            0x08001d44   Number         4  lto-llvm-20067c.o(.text.main)
+    __arm_cp.1_30                            0x08001d48   Number         4  lto-llvm-20067c.o(.text.main)
+    i.__0printf                              0x08001d78   Section        0  printfa.o(i.__0printf)
+    i.__scatterload_copy                     0x08001d98   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08001da6   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08001da8   Section       14  handlers.o(i.__scatterload_zeroinit)
+    _fp_digits                               0x08001db9   Thumb Code   366  printfa.o(i._fp_digits)
+    i._fp_digits                             0x08001db8   Section        0  printfa.o(i._fp_digits)
+    i._is_digit                              0x08001f3c   Section        0  scanf_fp.o(i._is_digit)
+    _printf_core                             0x08001f4d   Thumb Code  1744  printfa.o(i._printf_core)
+    i._printf_core                           0x08001f4c   Section        0  printfa.o(i._printf_core)
+    _printf_post_padding                     0x08002629   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_post_padding                   0x08002628   Section        0  printfa.o(i._printf_post_padding)
+    _printf_pre_padding                      0x0800264d   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i._printf_pre_padding                    0x0800264c   Section        0  printfa.o(i._printf_pre_padding)
+    .constdata                               0x0800267a   Section       64  ctype_c.o(.constdata)
+    Conv_weight                              0x080026bc   Data        1020  lto-llvm-20067c.o(.rodata)
+    [Anonymous Symbol]                       0x080026bc   Section        0  lto-llvm-20067c.o(.rodata)
+    upper_half                               0x08002ab8   Data         800  lto-llvm-20067c.o(.rodata)
+    lower_half                               0x08002dd8   Data        1120  lto-llvm-20067c.o(.rodata)
+    STACK                                    0x10000000   Section     2048  startup_stm32f303x8.o(STACK)
+    .data                                    0x20000000   Section        4  stdin.o(.data)
+    .data                                    0x20000004   Section        4  stdout.o(.data)
+    ungetc_sp                                0x20000008   Data           1  fgetc_b.o(.data)
+    .data                                    0x20000008   Section        3  fgetc_b.o(.data)
+    ungetc_stack                             0x20000009   Data           2  fgetc_b.o(.data)
+    fc2_bias                                 0x2000000c   Data          80  lto-llvm-20067c.o(.data)
+    [Anonymous Symbol]                       0x2000000c   Section        0  lto-llvm-20067c.o(.data)
+    fc2_right_shift                          0x2000005c   Data          80  lto-llvm-20067c.o(.data)
+    uwTickPrio                               0x200000ac   Data           4  lto-llvm-20067c.o(.data)
+    SystemCoreClock                          0x200000b0   Data           4  lto-llvm-20067c.o(.data)
+    fc3_bias                                 0x200000b4   Data           8  lto-llvm-20067c.o(.data)
+    fc3_right_shift                          0x200000bc   Data           8  lto-llvm-20067c.o(.data)
+    fc3_weight                               0x200000c4   Data          40  lto-llvm-20067c.o(.data)
+    input                                    0x200000ec   Data        5000  lto-llvm-20067c.o(.bss)
+    [Anonymous Symbol]                       0x200000ec   Section        0  lto-llvm-20067c.o(.bss)
+    huart2                                   0x20001474   Data         136  lto-llvm-20067c.o(.bss)
+    Conv_weight_ram                          0x200014fc   Data        1020  lto-llvm-20067c.o(.bss)
+    fc2_weight_ram                           0x200018f8   Data        2240  lto-llvm-20067c.o(.bss)
+    result.0                                 0x200021b8   Data           4  lto-llvm-20067c.o(.bss)
+    result.1                                 0x200021bc   Data           4  lto-llvm-20067c.o(.bss)
+    uwTick                                   0x200021c0   Data           4  lto-llvm-20067c.o(.bss)
+    hcrc                                     0x200021c4   Data          36  lto-llvm-20067c.o(.bss)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$IEEEF$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    _printf_a                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_c                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_charcount                        0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_d                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_e                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_f                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_flags                            0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_fp_dec                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_fp_hex                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_g                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_i                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_int_dec                          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_l                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lc                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_ll                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lld                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_lli                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llo                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llu                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_llx                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_dec                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_hex                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_longlong_oct                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_ls                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_mbtowc                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_n                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_o                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_p                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_percent                          0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_pre_padding                      0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_return_value                     0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_s                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_sizespec                         0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_str                              0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_truncate_signed                  0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_truncate_unsigned                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_u                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_wc                               0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_wctomb                           0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_widthprec                        0x00000000   Number         0  printfstubs.o ABSOLUTE
+    _printf_x                                0x00000000   Number         0  printfstubs.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    _scanf_longlong                           - Undefined Weak Reference
+    _scanf_string                             - Undefined Weak Reference
+    __Vectors_Size                           0x00000188   Number         0  startup_stm32f303x8.o ABSOLUTE
+    __Vectors                                0x08000000   Data           4  startup_stm32f303x8.o(RESET)
+    __Vectors_End                            0x08000188   Data           0  startup_stm32f303x8.o(RESET)
+    __main                                   0x08000189   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x08000189   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x0800018d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x08000191   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x08000191   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x08000191   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x08000191   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x08000199   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x08000199   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x0800019d   Thumb Code     8  startup_stm32f303x8.o(.text)
+    ADC1_2_IRQHandler                        0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    CAN_RX0_IRQHandler                       0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    CAN_RX1_IRQHandler                       0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    CAN_SCE_IRQHandler                       0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    CAN_TX_IRQHandler                        0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    COMP2_IRQHandler                         0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    COMP4_6_IRQHandler                       0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    DMA1_Channel1_IRQHandler                 0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    DMA1_Channel2_IRQHandler                 0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    DMA1_Channel3_IRQHandler                 0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    DMA1_Channel4_IRQHandler                 0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    DMA1_Channel5_IRQHandler                 0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    DMA1_Channel6_IRQHandler                 0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    DMA1_Channel7_IRQHandler                 0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    EXTI0_IRQHandler                         0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    EXTI15_10_IRQHandler                     0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    EXTI1_IRQHandler                         0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    EXTI2_TSC_IRQHandler                     0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    EXTI3_IRQHandler                         0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    EXTI4_IRQHandler                         0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    EXTI9_5_IRQHandler                       0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    FLASH_IRQHandler                         0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    FPU_IRQHandler                           0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    I2C1_ER_IRQHandler                       0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    I2C1_EV_IRQHandler                       0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    PVD_IRQHandler                           0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    RCC_IRQHandler                           0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    RTC_Alarm_IRQHandler                     0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    RTC_WKUP_IRQHandler                      0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    SPI1_IRQHandler                          0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    TAMP_STAMP_IRQHandler                    0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    TIM1_BRK_TIM15_IRQHandler                0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    TIM1_CC_IRQHandler                       0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    TIM1_TRG_COM_TIM17_IRQHandler            0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    TIM1_UP_TIM16_IRQHandler                 0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    TIM3_IRQHandler                          0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    TIM6_DAC1_IRQHandler                     0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    TIM7_DAC2_IRQHandler                     0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    USART1_IRQHandler                        0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    USART2_IRQHandler                        0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    USART3_IRQHandler                        0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    WWDG_IRQHandler                          0x080001b7   Thumb Code     0  startup_stm32f303x8.o(.text)
+    __0scanf                                 0x080001c1   Thumb Code    26  __0scanf.o(.text)
+    _scanf_int                               0x080001e1   Thumb Code   332  _scanf_int.o(.text)
+    _scanf_real                              0x08000455   Thumb Code     0  scanf_fp.o(.text)
+    _scanf_really_real                       0x08000455   Thumb Code   556  scanf_fp.o(.text)
+    __aeabi_uidiv                            0x0800068d   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x0800068d   Thumb Code    44  uidiv.o(.text)
+    __aeabi_uldivmod                         0x080006b9   Thumb Code    98  uldiv.o(.text)
+    _chval                                   0x0800071b   Thumb Code    28  _chval.o(.text)
+    __vfscanf_char_file                      0x08000739   Thumb Code    12  scanf_char_file.o(.text)
+    __I$use$fp                               0x0800074d   Thumb Code     0  iusefp.o(.text)
+    __aeabi_dadd                             0x0800074d   Thumb Code   322  dadd.o(.text)
+    __aeabi_dsub                             0x0800088f   Thumb Code     6  dadd.o(.text)
+    __aeabi_drsub                            0x08000895   Thumb Code     6  dadd.o(.text)
+    __aeabi_dmul                             0x0800089b   Thumb Code   228  dmul.o(.text)
+    __aeabi_ddiv                             0x0800097f   Thumb Code   222  ddiv.o(.text)
+    __aeabi_ul2d                             0x08000a5d   Thumb Code    24  dfltul.o(.text)
+    __aeabi_d2ulz                            0x08000a75   Thumb Code    48  dfixul.o(.text)
+    __aeabi_cdrcmple                         0x08000aa5   Thumb Code    48  cdrcmple.o(.text)
+    __aeabi_d2f                              0x08000ad5   Thumb Code    56  d2f.o(.text)
+    __scatterload                            0x08000b0d   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x08000b0d   Thumb Code     0  init.o(.text)
+    _fgetc$bs                                0x08000b31   Thumb Code    28  fgetc_b.o(.text)
+    __backspace                              0x08000b4d   Thumb Code    10  fgetc_b.o(.text)
+    __aeabi_llsl                             0x08000b5d   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x08000b5d   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x08000b7b   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x08000b7b   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x08000b9b   Thumb Code    36  llsshr.o(.text)
+    _ll_sshift_r                             0x08000b9b   Thumb Code     0  llsshr.o(.text)
+    __vfscanf_char                           0x08000bcd   Thumb Code    20  scanf_char.o(.text)
+    _float_round                             0x08000be9   Thumb Code    18  fepilogue.o(.text)
+    _float_epilogue                          0x08000bfb   Thumb Code    92  fepilogue.o(.text)
+    _double_round                            0x08000c57   Thumb Code    30  depilogue.o(.text)
+    _double_epilogue                         0x08000c75   Thumb Code   156  depilogue.o(.text)
+    __semihosting_library_function           0x08000d11   Thumb Code     0  semi.o(.text)
+    isspace                                  0x08000d11   Thumb Code    10  isspace_c.o(.text)
+    __vfscanf                                0x08000d1d   Thumb Code   808  _scanf.o(.text)
+    __I$use$semihosting$fgetc                0x08001049   Thumb Code     0  iusesemig.o(.text)
+    __ctype_lookup                           0x08001049   Thumb Code    34  ctype_c.o(.text)
+    __aeabi_ui2d                             0x08001071   Thumb Code    26  dfltui.o(.text)
+    BusFault_Handler                         0x0800108b   Thumb Code     2  lto-llvm-20067c.o(.text.BusFault_Handler)
+    DebugMon_Handler                         0x0800108d   Thumb Code     2  lto-llvm-20067c.o(.text.DebugMon_Handler)
+    HardFault_Handler                        0x0800118d   Thumb Code     2  lto-llvm-20067c.o(.text.HardFault_Handler)
+    MemManage_Handler                        0x0800118f   Thumb Code     2  lto-llvm-20067c.o(.text.MemManage_Handler)
+    NMI_Handler                              0x08001191   Thumb Code     2  lto-llvm-20067c.o(.text.NMI_Handler)
+    PendSV_Handler                           0x080011a5   Thumb Code     2  lto-llvm-20067c.o(.text.PendSV_Handler)
+    SVC_Handler                              0x080011a7   Thumb Code     2  lto-llvm-20067c.o(.text.SVC_Handler)
+    SysTick_Handler                          0x080011a9   Thumb Code    12  lto-llvm-20067c.o(.text.SysTick_Handler)
+    SystemInit                               0x080011b5   Thumb Code    12  lto-llvm-20067c.o(.text.SystemInit)
+    TIM2_IRQHandler                          0x080011c5   Thumb Code     2  lto-llvm-20067c.o(.text.TIM2_IRQHandler)
+    UsageFault_Handler                       0x08001261   Thumb Code     2  lto-llvm-20067c.o(.text.UsageFault_Handler)
+    fgetc                                    0x08001359   Thumb Code   176  lto-llvm-20067c.o(.text.fgetc)
+    fputc                                    0x0800140d   Thumb Code   128  lto-llvm-20067c.o(.text.fputc)
+    main                                     0x080014d1   Thumb Code  2216  lto-llvm-20067c.o(.text.main)
+    __0printf                                0x08001d79   Thumb Code    22  printfa.o(i.__0printf)
+    __1printf                                0x08001d79   Thumb Code     0  printfa.o(i.__0printf)
+    __2printf                                0x08001d79   Thumb Code     0  printfa.o(i.__0printf)
+    __c89printf                              0x08001d79   Thumb Code     0  printfa.o(i.__0printf)
+    printf                                   0x08001d79   Thumb Code     0  printfa.o(i.__0printf)
+    __scatterload_copy                       0x08001d99   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08001da7   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08001da9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    _is_digit                                0x08001f3d   Thumb Code    14  scanf_fp.o(i._is_digit)
+    __ctype_categories                       0x0800267a   Data          64  ctype_c.o(.constdata)
+    Region$$Table$$Base                      0x08003238   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003268   Number         0  anon$$obj.o(Region$$Table)
+    __initial_sp                             0x10000800   Data           0  startup_stm32f303x8.o(STACK)
+    __stdin                                  0x20000000   Data           4  stdin.o(.data)
+    __stdout                                 0x20000004   Data           4  stdout.o(.data)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000189
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003354, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003268, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x08000000   0x00000188   Data   RO            3    RESET               startup_stm32f303x8.o
+    0x08000188   0x08000188   0x00000000   Code   RO           44  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000188   0x08000188   0x00000004   Code   RO          316    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800018c   0x0800018c   0x00000004   Code   RO          319    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000190   0x08000190   0x00000000   Code   RO          321    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000190   0x08000190   0x00000000   Code   RO          323    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000190   0x08000190   0x00000008   Code   RO          324    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000198   0x08000198   0x00000000   Code   RO          326    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000198   0x08000198   0x00000000   Code   RO          328    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000198   0x08000198   0x00000004   Code   RO          317    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x0800019c   0x0800019c   0x00000024   Code   RO            4    .text               startup_stm32f303x8.o
+    0x080001c0   0x080001c0   0x00000020   Code   RO          308    .text               mc_w.l(__0scanf.o)
+    0x080001e0   0x080001e0   0x0000014c   Code   RO          310    .text               mc_w.l(_scanf_int.o)
+    0x0800032c   0x0800032c   0x00000360   Code   RO          312    .text               mc_w.l(scanf_fp.o)
+    0x0800068c   0x0800068c   0x0000002c   Code   RO          341    .text               mc_w.l(uidiv.o)
+    0x080006b8   0x080006b8   0x00000062   Code   RO          343    .text               mc_w.l(uldiv.o)
+    0x0800071a   0x0800071a   0x0000001c   Code   RO          345    .text               mc_w.l(_chval.o)
+    0x08000736   0x08000736   0x00000002   PAD
+    0x08000738   0x08000738   0x00000014   Code   RO          347    .text               mc_w.l(scanf_char_file.o)
+    0x0800074c   0x0800074c   0x00000000   Code   RO          349    .text               mc_w.l(iusefp.o)
+    0x0800074c   0x0800074c   0x0000014e   Code   RO          350    .text               mf_w.l(dadd.o)
+    0x0800089a   0x0800089a   0x000000e4   Code   RO          352    .text               mf_w.l(dmul.o)
+    0x0800097e   0x0800097e   0x000000de   Code   RO          354    .text               mf_w.l(ddiv.o)
+    0x08000a5c   0x08000a5c   0x00000018   Code   RO          356    .text               mf_w.l(dfltul.o)
+    0x08000a74   0x08000a74   0x00000030   Code   RO          358    .text               mf_w.l(dfixul.o)
+    0x08000aa4   0x08000aa4   0x00000030   Code   RO          360    .text               mf_w.l(cdrcmple.o)
+    0x08000ad4   0x08000ad4   0x00000038   Code   RO          362    .text               mf_w.l(d2f.o)
+    0x08000b0c   0x08000b0c   0x00000024   Code   RO          364    .text               mc_w.l(init.o)
+    0x08000b30   0x08000b30   0x0000002c   Code   RO          366    .text               mc_w.l(fgetc_b.o)
+    0x08000b5c   0x08000b5c   0x0000001e   Code   RO          369    .text               mc_w.l(llshl.o)
+    0x08000b7a   0x08000b7a   0x00000020   Code   RO          371    .text               mc_w.l(llushr.o)
+    0x08000b9a   0x08000b9a   0x00000024   Code   RO          373    .text               mc_w.l(llsshr.o)
+    0x08000bbe   0x08000bbe   0x00000002   PAD
+    0x08000bc0   0x08000bc0   0x00000028   Code   RO          375    .text               mc_w.l(scanf_char.o)
+    0x08000be8   0x08000be8   0x0000006e   Code   RO          377    .text               mf_w.l(fepilogue.o)
+    0x08000c56   0x08000c56   0x000000ba   Code   RO          379    .text               mf_w.l(depilogue.o)
+    0x08000d10   0x08000d10   0x00000000   Code   RO          381    .text               mc_w.l(semi.o)
+    0x08000d10   0x08000d10   0x0000000a   Code   RO          382    .text               mc_w.l(isspace_c.o)
+    0x08000d1a   0x08000d1a   0x00000002   PAD
+    0x08000d1c   0x08000d1c   0x0000032c   Code   RO          384    .text               mc_w.l(_scanf.o)
+    0x08001048   0x08001048   0x00000000   Code   RO          386    .text               mc_w.l(iusesemig.o)
+    0x08001048   0x08001048   0x00000028   Code   RO          387    .text               mc_w.l(ctype_c.o)
+    0x08001070   0x08001070   0x0000001a   Code   RO          454    .text               mf_w.l(dfltui.o)
+    0x0800108a   0x0800108a   0x00000002   Code   RO          407    .text.BusFault_Handler  lto-llvm-20067c.o
+    0x0800108c   0x0800108c   0x00000002   Code   RO          413    .text.DebugMon_Handler  lto-llvm-20067c.o
+    0x0800108e   0x0800108e   0x00000008   Code   RO          395    .text.Error_Handler  lto-llvm-20067c.o
+    0x08001096   0x08001096   0x00000002   PAD
+    0x08001098   0x08001098   0x00000010   Code   RO          429    .text.HAL_Delay     lto-llvm-20067c.o
+    0x080010a8   0x080010a8   0x00000060   Code   RO          427    .text.HAL_InitTick  lto-llvm-20067c.o
+    0x08001108   0x08001108   0x00000024   Code   RO          433    .text.HAL_RCC_GetPCLK1Freq  lto-llvm-20067c.o
+    0x0800112c   0x0800112c   0x00000060   Code   RO          431    .text.HAL_RCC_GetSysClockFreq  lto-llvm-20067c.o
+    0x0800118c   0x0800118c   0x00000002   Code   RO          403    .text.HardFault_Handler  lto-llvm-20067c.o
+    0x0800118e   0x0800118e   0x00000002   Code   RO          405    .text.MemManage_Handler  lto-llvm-20067c.o
+    0x08001190   0x08001190   0x00000002   Code   RO          401    .text.NMI_Handler   lto-llvm-20067c.o
+    0x08001192   0x08001192   0x00000008   Code   RO          439    .text.OUTLINED_FUNCTION_0  lto-llvm-20067c.o
+    0x0800119a   0x0800119a   0x0000000a   Code   RO          441    .text.OUTLINED_FUNCTION_1  lto-llvm-20067c.o
+    0x080011a4   0x080011a4   0x00000002   Code   RO          415    .text.PendSV_Handler  lto-llvm-20067c.o
+    0x080011a6   0x080011a6   0x00000002   Code   RO          411    .text.SVC_Handler   lto-llvm-20067c.o
+    0x080011a8   0x080011a8   0x0000000c   Code   RO          417    .text.SysTick_Handler  lto-llvm-20067c.o
+    0x080011b4   0x080011b4   0x00000010   Code   RO          437    .text.SystemInit    lto-llvm-20067c.o
+    0x080011c4   0x080011c4   0x00000002   Code   RO          419    .text.TIM2_IRQHandler  lto-llvm-20067c.o
+    0x080011c6   0x080011c6   0x00000002   PAD
+    0x080011c8   0x080011c8   0x00000098   Code   RO          435    .text.UART_WaitOnFlagUntilTimeout  lto-llvm-20067c.o
+    0x08001260   0x08001260   0x00000002   Code   RO          409    .text.UsageFault_Handler  lto-llvm-20067c.o
+    0x08001262   0x08001262   0x00000014   Code   RO          421    .text._Z15fc2_ACT_garbageiiPv  lto-llvm-20067c.o
+    0x08001276   0x08001276   0x00000006   Code   RO          423    .text._Z15fc3_ACT_garbageiiPv  lto-llvm-20067c.o
+    0x0800127c   0x0800127c   0x000000da   Code   RO          425    .text._Z16very_ugly_LinearPKsPKaPKiS4_PFviiPvEjS5_iii  lto-llvm-20067c.o
+    0x08001356   0x08001356   0x00000002   PAD
+    0x08001358   0x08001358   0x000000b4   Code   RO          399    .text.fgetc         lto-llvm-20067c.o
+    0x0800140c   0x0800140c   0x00000084   Code   RO          397    .text.fputc         lto-llvm-20067c.o
+    0x08001490   0x08001490   0x0000003c   Code   RO          391    .text.getCurrentMicros  lto-llvm-20067c.o
+    0x080014cc   0x080014cc   0x00000004   PAD
+    0x080014d0   0x080014d0   0x000008a8   Code   RO          393    .text.main          lto-llvm-20067c.o
+    0x08001d78   0x08001d78   0x00000020   Code   RO          280    i.__0printf         mc_w.l(printfa.o)
+    0x08001d98   0x08001d98   0x0000000e   Code   RO          458    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08001da6   0x08001da6   0x00000002   Code   RO          459    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08001da8   0x08001da8   0x0000000e   Code   RO          460    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08001db6   0x08001db6   0x00000002   PAD
+    0x08001db8   0x08001db8   0x00000184   Code   RO          287    i._fp_digits        mc_w.l(printfa.o)
+    0x08001f3c   0x08001f3c   0x0000000e   Code   RO          314    i._is_digit         mc_w.l(scanf_fp.o)
+    0x08001f4a   0x08001f4a   0x00000002   PAD
+    0x08001f4c   0x08001f4c   0x000006dc   Code   RO          288    i._printf_core      mc_w.l(printfa.o)
+    0x08002628   0x08002628   0x00000024   Code   RO          289    i._printf_post_padding  mc_w.l(printfa.o)
+    0x0800264c   0x0800264c   0x0000002e   Code   RO          290    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x0800267a   0x0800267a   0x00000040   Data   RO          388    .constdata          mc_w.l(ctype_c.o)
+    0x080026ba   0x080026ba   0x00000002   PAD
+    0x080026bc   0x080026bc   0x00000b7c   Data   RO          445    .rodata             lto-llvm-20067c.o
+    0x08003238   0x08003238   0x00000030   Data   RO          457    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM2 (Exec base: 0x10000000, Load base: 0x08003354, Size: 0x00000800, Max: 0x00001000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000000        -       0x00000800   Zero   RW            1    STACK               startup_stm32f303x8.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003268, Size: 0x000021e8, Max: 0x00003000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x08003268   0x00000004   Data   RW          330    .data               mc_w.l(stdin.o)
+    0x20000004   0x0800326c   0x00000004   Data   RW          331    .data               mc_w.l(stdout.o)
+    0x20000008   0x08003270   0x00000003   Data   RW          367    .data               mc_w.l(fgetc_b.o)
+    0x2000000b   0x08003273   0x00000001   PAD
+    0x2000000c   0x08003274   0x000000e0   Data   RW          446    .data               lto-llvm-20067c.o
+    0x200000ec        -       0x000020fc   Zero   RW          443    .bss                lto-llvm-20067c.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      3300        300       2940        224       8444      63211   lto-llvm-20067c.o
+        36          8        392          0       2048        856   startup_stm32f303x8.o
+
+    ----------------------------------------------------------------------
+      3346        312       3380        224      10492      64067   Object Totals
+         0          0         48          0          0          0   (incl. Generated)
+        10          4          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        32          6          0          0          0         84   __0scanf.o
+        28          0          0          0          0         68   _chval.o
+       812          4          0          0          0        112   _scanf.o
+       332          0          0          0          0         96   _scanf_int.o
+        40          6         64          0          0         68   ctype_c.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        44          6          0          3          0        144   fgetc_b.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        10          0          0          0          0         68   isspace_c.o
+         0          0          0          0          0          0   iusefp.o
+         0          0          0          0          0          0   iusesemig.o
+        30          0          0          0          0         68   llshl.o
+        36          0          0          0          0         68   llsshr.o
+        32          0          0          0          0         68   llushr.o
+      2258         90          0          0          0        452   printfa.o
+        40          8          0          0          0         84   scanf_char.o
+        20          8          0          0          0         68   scanf_char_file.o
+       878         12          0          0          0        216   scanf_fp.o
+         0          0          0          0          0          0   semi.o
+         0          0          0          4          0          0   stdin.o
+         0          0          0          4          0          0   stdout.o
+        44          0          0          0          0         80   uidiv.o
+        98          0          0          0          0         92   uldiv.o
+        48          0          0          0          0         68   cdrcmple.o
+        56          0          0          0          0         88   d2f.o
+       334          0          0          0          0        148   dadd.o
+       222          0          0          0          0        100   ddiv.o
+       186          0          0          0          0        176   depilogue.o
+        48          0          0          0          0         68   dfixul.o
+        26          0          0          0          0         76   dfltui.o
+        24          0          0          0          0         76   dfltul.o
+       228          0          0          0          0         96   dmul.o
+       110          0          0          0          0        168   fepilogue.o
+
+    ----------------------------------------------------------------------
+      6112        156         66         12          0       2968   Library Totals
+        10          0          2          1          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      4820        156         64         11          0       1904   mc_w.l
+      1282          0          0          0          0       1064   mf_w.l
+
+    ----------------------------------------------------------------------
+      6112        156         66         12          0       2968   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      9458        468       3446        236      10492      65679   Grand Totals
+      9458        468       3446        236      10492      65679   ELF Image Totals
+      9458        468       3446        236          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                12904 (  12.60kB)
+    Total RW  Size (RW Data + ZI Data)             10728 (  10.48kB)
+    Total ROM Size (Code + RO Data + RW Data)      13140 (  12.83kB)
+
+==============================================================================
+

@@ -1,0 +1,16 @@
+testmodel\network_data.o: ../Src/network_data.c
+testmodel\network_data.o: ../Inc/network_data.h
+testmodel\network_data.o: ../Inc/network_config.h
+testmodel\network_data.o: ../Inc/network_data_params.h
+testmodel\network_data.o: ../Middlewares/ST/AI/Inc/ai_platform.h
+testmodel\network_data.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+testmodel\network_data.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+testmodel\network_data.o: D:\Keil5\ARM\ARMCC\Bin\..\include\inttypes.h
+testmodel\network_data.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+testmodel\network_data.o: ../Middlewares/ST/AI/Inc/ai_platform_interface.h
+testmodel\network_data.o: ../Middlewares/ST/AI/Inc/datatypes_network.h
+testmodel\network_data.o: ../Middlewares/ST/AI/Inc/ai_datatypes.h
+testmodel\network_data.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+testmodel\network_data.o: ../Middlewares/ST/AI/Inc/ai_datatypes_format.h
+testmodel\network_data.o: ../Middlewares/ST/AI/Inc/ai_datatypes_defines.h
+testmodel\network_data.o: ../Middlewares/ST/AI/Inc/formats_list.h

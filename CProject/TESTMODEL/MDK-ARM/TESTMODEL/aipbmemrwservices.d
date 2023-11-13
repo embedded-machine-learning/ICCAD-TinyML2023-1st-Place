@@ -1,0 +1,9 @@
+testmodel\aipbmemrwservices.o: ../Src/aiPbMemRWServices.c
+testmodel\aipbmemrwservices.o: ../Inc/aiPbMemRWServices.h
+testmodel\aipbmemrwservices.o: ../Inc/aiPbMgr.h
+testmodel\aipbmemrwservices.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+testmodel\aipbmemrwservices.o: ../Inc/pb.h
+testmodel\aipbmemrwservices.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+testmodel\aipbmemrwservices.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+testmodel\aipbmemrwservices.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+testmodel\aipbmemrwservices.o: ../Inc/stm32msg.pb.h

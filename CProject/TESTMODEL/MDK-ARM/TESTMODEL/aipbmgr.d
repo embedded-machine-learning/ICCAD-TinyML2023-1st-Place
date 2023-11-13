@@ -1,0 +1,14 @@
+testmodel\aipbmgr.o: ../Src/aiPbMgr.c
+testmodel\aipbmgr.o: ../Inc/aiPbMgr.h
+testmodel\aipbmgr.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+testmodel\aipbmgr.o: ../Inc/pb.h
+testmodel\aipbmgr.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+testmodel\aipbmgr.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+testmodel\aipbmgr.o: D:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+testmodel\aipbmgr.o: ../Inc/stm32msg.pb.h
+testmodel\aipbmgr.o: ../Inc/aiPbIO.h
+testmodel\aipbmgr.o: ../Inc/pb_encode.h
+testmodel\aipbmgr.o: ../Inc/pb_decode.h
+testmodel\aipbmgr.o: ../Inc/ai_device_adaptor.h
+testmodel\aipbmgr.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+testmodel\aipbmgr.o: ../Drivers/CMSIS/Include/cmsis_armcc.h

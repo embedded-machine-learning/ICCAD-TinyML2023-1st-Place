@@ -86,8 +86,8 @@ Matrix<M1_1, M2_1, Type_Out> Linear(const Matrix<M1_1, M1_2, int16_t> &A, const 
 				SIMD16 in2{.true_data = { //Second Input
 							   A.data[i1_1][i1_2 + 2],
 							   A.data[i1_1][i1_2 + 3]}};
-				SIMD16 w1{.simd = __SXTB16_ROR8(w.simd)};
-				SIMD16 w2{.simd = __SXTB16(w.simd)};
+				SIMD16 w1{.simd = __SXTB16(w.simd)};
+				SIMD16 w2{.simd = __SXTB16_ROR8(w.simd)};
 
 				sum.simd = __SMLAD(in1.simd, w1.simd, sum.simd);
 				sum.simd = __SMLAD(in2.simd, w2.simd, sum.simd);

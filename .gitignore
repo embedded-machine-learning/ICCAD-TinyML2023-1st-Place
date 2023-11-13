@@ -1,3 +1,7 @@
+*.venv
+*.env
+Training/tinyml_contest_data_training/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

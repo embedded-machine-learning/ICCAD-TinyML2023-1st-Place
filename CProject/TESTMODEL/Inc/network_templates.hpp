@@ -60,7 +60,7 @@ template <
 	int16_t M2_1,
 	int16_t M2_2,
 	typename Lambda>
-Matrix<M1_1, M2_1, Type_Out> Linear(const Matrix<M1_1, M1_2, int16_t> &A, const Matrix<M2_1, M2_2, int8_t> &B, const Matrix<M2_1, 1, int32_t> &bias, const Matrix<M2_1, 1, int32_t> &right_shift, Lambda act)
+Matrix<M1_1, M2_1, Type_Out> Linear(const Matrix<M1_1, M1_2, int16_t> &A, const Matrix<M2_1, M2_2, int8_t> &B, const Matrix<M2_1, 1, int32_t> &bias, const Matrix<M2_1, 1, int8_t> &right_shift, Lambda act)
 {
 	Matrix<M1_1, M2_1, Type_Out> out;
 

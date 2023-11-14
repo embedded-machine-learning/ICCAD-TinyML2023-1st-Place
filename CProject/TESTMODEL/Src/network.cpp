@@ -23,8 +23,8 @@ void aiRun(const float input[1][1250][1], float result[2])
 	const auto I1 = ConvT<32>(*IN, Conv_weight_ram, Conv_bias, conv_ACT);
 
 	// It could have been so nice, but alas lower points
-	 const auto I2 = Linear<int16_t>(I1,fc2_weight_ram,fc2_bias,fc2_right_shift,fc2_ACT);
-	 const auto I3 = Linear<int32_t>(I2,fc3_weight,fc3_bias,fc3_right_shift,fc3_ACT);
+	const auto I2 = Linear<int16_t>(I1,fc2_weight_ram,fc2_bias,fc2_right_shift,fc2_ACT);
+	const auto I3 = Linear<int32_t>(I2,fc3_weight,fc3_bias,fc3_right_shift,fc3_ACT);
 
 	//Matrix<1, 20, int16_t> I2;
 	//very_ugly_Linear(&I1.data[0][0], &fc2_weight_ram.data[0][0], &fc2_bias.data[0][0], &fc2_right_shift.data[0][0], &fc2_ACT_garbage, sizeof(int16_t), &I2.data[0][0], 111, 20, 112);

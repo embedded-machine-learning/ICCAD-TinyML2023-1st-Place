@@ -17,7 +17,7 @@ void very_ugly_Linear(const int16_t *A, const int8_t *B, const int32_t *bias, co
 void aiRun(const float input[1][1250][1], float result[2])
 {
 
-	const Matrix<1, 1250> *IN = (Matrix<1, 1250> *)(void *)input;
+	const Matrix<1, 1250> *IN = reinterpret_cast<const Matrix<1, 1250> *>(input);
 
 	const auto I1 = ConvT<32>(*IN, Conv_weight_ram, Conv_bias, onnxConv_ACT);
 
@@ -31,8 +31,8 @@ void aiRun(const float input[1][1250][1], float result[2])
 	Matrix<1, 2, int32_t> I3;
 	very_ugly_Linear(&I2.data[0][0], &fc3_weight.data[0][0], &fc3_bias.data[0][0], &fc3_right_shift.data[0][0], &fc3_ACT_garbage, sizeof(int32_t), &I3.data[0][0], 20, 2, 20);
 
-	result[0] = float_conversion[0] * (float)I3.data[0][0];
-	result[1] = float_conversion[1] * (float)I3.data[0][1];
+	result[0] = float_conversion[0] * static_cast<float>(I3.data[0][0]);
+	result[1] = float_conversion[1] * static_cast<float>(I3.data[0][1]);
 }
 
 void Model_Init()

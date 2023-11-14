@@ -438,7 +438,7 @@ if __name__ == '__main__':
     argparser.add_argument('--path_data', type=str, 
                             default='./tinyml_contest_data_training/')
     argparser.add_argument('--path_indices', type=str, default='data_indices')
-    argparser.add_argument('--result_save_path', type=str, default='./saved_models/experiments5/')
+    argparser.add_argument('--result_save_path', type=str, default='./saved_models/experiments/')
     argparser.add_argument('--idx', type=int, default=-1)
 
     args = argparser.parse_args()

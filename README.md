@@ -1,8 +1,9 @@
 # Training
 ### Environment setup
 Go into the `Training` directory.  
-Create an python environment and install the requirements file.
-Copy the `tinyml_contest_data_training` folder into the directory.
+Create an python environment and install the requirements file. \
+Copy the `tinyml_contest_data_training` folder into the directory. \
+Please remember to also get the submodule. 
 
 ### Training
 simply run:  

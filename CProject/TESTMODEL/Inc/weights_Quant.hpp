@@ -1,7 +1,7 @@
 #include "network_templates.hpp" 
 #include <cmath>
 
-const auto Conv_ACT = [](const float &val) -> int16_t { 
+const auto conv_ACT = [](const float &val) -> int16_t { 
     int32_t x=(int32_t)fabsf(val);
     int32_t b = (32767 - x); 
     int32_t d = (b >> 31);

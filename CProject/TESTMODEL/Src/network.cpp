@@ -19,17 +19,17 @@ void aiRun(const float input[1][1250][1], float result[2])
 
 	const Matrix<1, 1250> *IN = reinterpret_cast<const Matrix<1, 1250> *>(input);
 
-	const auto I1 = ConvT<32>(*IN, Conv_weight_ram, Conv_bias, onnxConv_ACT);
+	const auto I1 = ConvT<32>(*IN, Conv_weight_ram, Conv_bias, conv_ACT);
 
 	// It could have been so nice, but alas lower points
-	// const auto I2 = Linear<int16_t>(I1,fc2_weight_ram,fc2_bias,fc2_right_shift,fc2_ACT);
-	// const auto I3 = Linear<int32_t>(I2,fc3_weight,fc3_bias,fc3_right_shift,fc3_ACT);
+	 const auto I2 = Linear<int16_t>(I1,fc2_weight_ram,fc2_bias,fc2_right_shift,fc2_ACT);
+	 const auto I3 = Linear<int32_t>(I2,fc3_weight,fc3_bias,fc3_right_shift,fc3_ACT);
 
-	Matrix<1, 20, int16_t> I2;
-	very_ugly_Linear(&I1.data[0][0], &fc2_weight_ram.data[0][0], &fc2_bias.data[0][0], &fc2_right_shift.data[0][0], &fc2_ACT_garbage, sizeof(int16_t), &I2.data[0][0], 111, 20, 112);
+	//Matrix<1, 20, int16_t> I2;
+	//very_ugly_Linear(&I1.data[0][0], &fc2_weight_ram.data[0][0], &fc2_bias.data[0][0], &fc2_right_shift.data[0][0], &fc2_ACT_garbage, sizeof(int16_t), &I2.data[0][0], 111, 20, 112);
 
-	Matrix<1, 2, int32_t> I3;
-	very_ugly_Linear(&I2.data[0][0], &fc3_weight.data[0][0], &fc3_bias.data[0][0], &fc3_right_shift.data[0][0], &fc3_ACT_garbage, sizeof(int32_t), &I3.data[0][0], 20, 2, 20);
+	//Matrix<1, 2, int32_t> I3;
+	//very_ugly_Linear(&I2.data[0][0], &fc3_weight.data[0][0], &fc3_bias.data[0][0], &fc3_right_shift.data[0][0], &fc3_ACT_garbage, sizeof(int32_t), &I3.data[0][0], 20, 2, 20);
 
 	result[0] = float_conversion[0] * static_cast<float>(I3.data[0][0]);
 	result[1] = float_conversion[1] * static_cast<float>(I3.data[0][1]);
@@ -92,7 +92,7 @@ void Model_Init()
 	// }	
 }
 
-void very_ugly_Linear(const int16_t *A, const int8_t *B, const int32_t *bias, const int8_t *right_shift, void (*act)(int32_t, int32_t, void *), uint32_t size_of_datatype, void *out, const int32_t M1_2, const int32_t M2_1, const int32_t M2_2)
+void very_ugly_Linear(const int16_t *A, const int8_t *B, const int32_t *bias, const int8_t *right_shift, void (*act)(int32_t, int8_t, void *), uint32_t size_of_datatype, void *out, const int32_t M1_2, const int32_t M2_1, const int32_t M2_2)
 {
 #pragma nounroll
 	for (int i2_1 = 0; i2_1 < M2_1; i2_1++)

@@ -6,17 +6,17 @@ Section Cross References
 
     startup_stm32f303x8.o(RESET) refers to startup_stm32f303x8.o(STACK) for __initial_sp
     startup_stm32f303x8.o(RESET) refers to startup_stm32f303x8.o(.text) for Reset_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.NMI_Handler) for NMI_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.HardFault_Handler) for HardFault_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.MemManage_Handler) for MemManage_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.BusFault_Handler) for BusFault_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.UsageFault_Handler) for UsageFault_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.SVC_Handler) for SVC_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.DebugMon_Handler) for DebugMon_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.PendSV_Handler) for PendSV_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.SysTick_Handler) for SysTick_Handler
-    startup_stm32f303x8.o(RESET) refers to lto-llvm-fdc1ad.o(.text.TIM2_IRQHandler) for TIM2_IRQHandler
-    startup_stm32f303x8.o(.text) refers to lto-llvm-fdc1ad.o(.text.SystemInit) for SystemInit
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.NMI_Handler) for NMI_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.HardFault_Handler) for HardFault_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.MemManage_Handler) for MemManage_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.BusFault_Handler) for BusFault_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.UsageFault_Handler) for UsageFault_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.SVC_Handler) for SVC_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.PendSV_Handler) for PendSV_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_stm32f303x8.o(RESET) refers to lto-llvm-cbcce3.o(.text.TIM2_IRQHandler) for TIM2_IRQHandler
+    startup_stm32f303x8.o(.text) refers to lto-llvm-cbcce3.o(.text.SystemInit) for SystemInit
     startup_stm32f303x8.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
@@ -26,54 +26,54 @@ Section Cross References
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
     entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
     printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
-    printfb.o(i.__0fprintf$bare) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printfb.o(i.__0fprintf$bare) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
-    printfb.o(i.__0printf$bare) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
     printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
     printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
     printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
     printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
     printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
-    printfb.o(i.__0vfprintf$bare) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printfb.o(i.__0vfprintf$bare) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
-    printfb.o(i.__0vprintf$bare) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
     printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
     printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
     printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
     printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
     printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
-    printf0.o(i.__0fprintf$0) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf0.o(i.__0fprintf$0) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
-    printf0.o(i.__0printf$0) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
     printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
     printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
     printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
     printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
     printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
-    printf0.o(i.__0vfprintf$0) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf0.o(i.__0vfprintf$0) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
-    printf0.o(i.__0vprintf$0) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
     printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
     printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
     printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
     printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
     printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
-    printf1.o(i.__0fprintf$1) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf1.o(i.__0fprintf$1) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
-    printf1.o(i.__0printf$1) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
     printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
     printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
     printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
     printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
     printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
-    printf1.o(i.__0vfprintf$1) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf1.o(i.__0vfprintf$1) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
-    printf1.o(i.__0vprintf$1) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
     printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
     printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
@@ -81,36 +81,36 @@ Section Cross References
     printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
     printf1.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
     printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
-    printf2.o(i.__0fprintf$2) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf2.o(i.__0fprintf$2) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
-    printf2.o(i.__0printf$2) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
     printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
     printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
     printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
     printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
     printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
-    printf2.o(i.__0vfprintf$2) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf2.o(i.__0vfprintf$2) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
-    printf2.o(i.__0vprintf$2) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
     printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
     printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
     printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
     printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
     printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
-    printf3.o(i.__0fprintf$3) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf3.o(i.__0fprintf$3) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
-    printf3.o(i.__0printf$3) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
     printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
     printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
     printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
     printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
     printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
-    printf3.o(i.__0vfprintf$3) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf3.o(i.__0vfprintf$3) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
-    printf3.o(i.__0vprintf$3) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
     printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
     printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
@@ -118,18 +118,18 @@ Section Cross References
     printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
     printf3.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
     printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
-    printf4.o(i.__0fprintf$4) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf4.o(i.__0fprintf$4) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
-    printf4.o(i.__0printf$4) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
     printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
     printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
     printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
     printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
     printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
-    printf4.o(i.__0vfprintf$4) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf4.o(i.__0vfprintf$4) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
-    printf4.o(i.__0vprintf$4) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
     printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
     printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
@@ -137,18 +137,18 @@ Section Cross References
     printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
     printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
     printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
-    printf5.o(i.__0fprintf$5) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf5.o(i.__0fprintf$5) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
-    printf5.o(i.__0printf$5) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
     printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
     printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
     printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
     printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
     printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
-    printf5.o(i.__0vfprintf$5) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf5.o(i.__0vfprintf$5) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
-    printf5.o(i.__0vprintf$5) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
     printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
     printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
@@ -156,18 +156,18 @@ Section Cross References
     printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
     printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
     printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
-    printf6.o(i.__0fprintf$6) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf6.o(i.__0fprintf$6) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
-    printf6.o(i.__0printf$6) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
     printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
     printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
     printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
     printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
     printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
-    printf6.o(i.__0vfprintf$6) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf6.o(i.__0vfprintf$6) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
-    printf6.o(i.__0vprintf$6) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
     printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
     printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
@@ -177,18 +177,18 @@ Section Cross References
     printf6.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
     printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
     printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
-    printf7.o(i.__0fprintf$7) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf7.o(i.__0fprintf$7) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
-    printf7.o(i.__0printf$7) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
     printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
     printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
     printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
     printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
     printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
-    printf7.o(i.__0vfprintf$7) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf7.o(i.__0vfprintf$7) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
-    printf7.o(i.__0vprintf$7) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
     printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
     printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
@@ -198,18 +198,18 @@ Section Cross References
     printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
     printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
     printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
-    printf8.o(i.__0fprintf$8) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf8.o(i.__0fprintf$8) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
-    printf8.o(i.__0printf$8) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
     printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
     printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
     printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
     printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
     printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
-    printf8.o(i.__0vfprintf$8) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf8.o(i.__0vfprintf$8) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
-    printf8.o(i.__0vprintf$8) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
     printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
     printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
@@ -220,10 +220,10 @@ Section Cross References
     printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
     printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
-    printfa.o(i.__0fprintf) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printfa.o(i.__0fprintf) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
-    printfa.o(i.__0printf) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printfa.o(i.__0printf) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
     printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
@@ -233,10 +233,10 @@ Section Cross References
     printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
     printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
-    printfa.o(i.__0vfprintf) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printfa.o(i.__0vfprintf) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
-    printfa.o(i.__0vprintf) refers to lto-llvm-fdc1ad.o(.text.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to lto-llvm-cbcce3.o(.text.fputc) for fputc
     printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
     printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
     printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
@@ -275,12 +275,12 @@ Section Cross References
     entry2.o(__vectab_stack_and_reset_area) refers to startup_stm32f303x8.o(STACK) for __initial_sp
     entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
     entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
-    entry9a.o(.ARM.Collect$$$$0000000B) refers to lto-llvm-fdc1ad.o(.text.main) for main
-    entry9b.o(.ARM.Collect$$$$0000000C) refers to lto-llvm-fdc1ad.o(.text.main) for main
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to lto-llvm-cbcce3.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to lto-llvm-cbcce3.o(.text.main) for main
     uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
     uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
     scanf_char_file.o(.text) refers to scanf_char.o(.text) for __vfscanf_char
-    scanf_char_file.o(.text) refers to lto-llvm-fdc1ad.o(.text.fgetc) for fgetc
+    scanf_char_file.o(.text) refers to lto-llvm-cbcce3.o(.text.fgetc) for fgetc
     scanf_char_file.o(.text) refers to fgetc_b.o(.text) for __backspace
     dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
@@ -314,158 +314,158 @@ Section Cross References
     _scanf.o(.text) refers (Weak) to scanf_fp.o(.text) for _scanf_real
     _scanf.o(.text) refers (Weak) to _scanf_int.o(.text) for _scanf_int
     ctype_c.o(.text) refers to ctype_c.o(.constdata) for .constdata
-    lto-llvm-fdc1ad.o(.text) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.getCurrentMicros) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.getCurrentMicros) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.getCurrentMicros) refers to lto-llvm-fdc1ad.o(.bss) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.getCurrentMicros) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.getCurrentMicros) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.getCurrentMicros) refers to lto-llvm-fdc1ad.o(.text.getCurrentMicros) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.main) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.main) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.text.HAL_InitTick) for HAL_InitTick
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq) for HAL_RCC_GetSysClockFreq
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq) for HAL_RCC_GetPCLK1Freq
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
-    lto-llvm-fdc1ad.o(.text.main) refers to printfa.o(i.__0printf) for __2printf
-    lto-llvm-fdc1ad.o(.text.main) refers to __0scanf.o(.text) for __0scanf
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.text.HAL_Delay) for HAL_Delay
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.text.getCurrentMicros) for getCurrentMicros
-    lto-llvm-fdc1ad.o(.text.main) refers to dfltui.o(.text) for __aeabi_ui2d
-    lto-llvm-fdc1ad.o(.text.main) refers to dadd.o(.text) for __aeabi_dsub
-    lto-llvm-fdc1ad.o(.text.main) refers to ddiv.o(.text) for __aeabi_ddiv
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.text.Error_Handler) for Error_Handler
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.bss) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.data) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.main) refers to lto-llvm-fdc1ad.o(.rodata) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.main) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.main) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.main) refers to lto-llvm-fdc1ad.o(.text.main) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.Error_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.Error_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.Error_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.Error_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.Error_Handler) refers to lto-llvm-fdc1ad.o(.text.Error_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.fputc) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.fputc) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.fputc) refers to lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
-    lto-llvm-fdc1ad.o(.text.fputc) refers to lto-llvm-fdc1ad.o(.bss) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.fputc) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.fputc) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.fputc) refers to lto-llvm-fdc1ad.o(.text.fputc) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.fgetc) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.fgetc) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.fgetc) refers to lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
-    lto-llvm-fdc1ad.o(.text.fgetc) refers to lto-llvm-fdc1ad.o(.bss) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.fgetc) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.fgetc) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.fgetc) refers to lto-llvm-fdc1ad.o(.text.fgetc) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.NMI_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.NMI_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.NMI_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.NMI_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.NMI_Handler) refers to lto-llvm-fdc1ad.o(.text.NMI_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.HardFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.HardFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HardFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HardFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HardFault_Handler) refers to lto-llvm-fdc1ad.o(.text.HardFault_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.MemManage_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.MemManage_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.MemManage_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.MemManage_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.MemManage_Handler) refers to lto-llvm-fdc1ad.o(.text.MemManage_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.BusFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.BusFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.BusFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.BusFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.BusFault_Handler) refers to lto-llvm-fdc1ad.o(.text.BusFault_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.UsageFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.UsageFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.UsageFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.UsageFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.UsageFault_Handler) refers to lto-llvm-fdc1ad.o(.text.UsageFault_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.SVC_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.SVC_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SVC_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SVC_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SVC_Handler) refers to lto-llvm-fdc1ad.o(.text.SVC_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.DebugMon_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.DebugMon_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.DebugMon_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.DebugMon_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.DebugMon_Handler) refers to lto-llvm-fdc1ad.o(.text.DebugMon_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.PendSV_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.PendSV_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.PendSV_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.PendSV_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.PendSV_Handler) refers to lto-llvm-fdc1ad.o(.text.PendSV_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.SysTick_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.SysTick_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.SysTick_Handler) refers to lto-llvm-fdc1ad.o(.bss) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SysTick_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SysTick_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SysTick_Handler) refers to lto-llvm-fdc1ad.o(.text.SysTick_Handler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.TIM2_IRQHandler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.TIM2_IRQHandler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.TIM2_IRQHandler) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.TIM2_IRQHandler) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.TIM2_IRQHandler) refers to lto-llvm-fdc1ad.o(.text.TIM2_IRQHandler) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.HAL_InitTick) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.HAL_InitTick) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.HAL_InitTick) refers to lto-llvm-fdc1ad.o(.data) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_InitTick) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_InitTick) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_InitTick) refers to lto-llvm-fdc1ad.o(.text.HAL_InitTick) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.HAL_Delay) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.HAL_Delay) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.HAL_Delay) refers to lto-llvm-fdc1ad.o(.bss) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_Delay) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_Delay) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_Delay) refers to lto-llvm-fdc1ad.o(.text.HAL_Delay) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers to lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq) refers to lto-llvm-fdc1ad.o(.data) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers to lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.UART_WaitOnFlagUntilTimeout) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.UART_WaitOnFlagUntilTimeout) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.UART_WaitOnFlagUntilTimeout) refers to lto-llvm-fdc1ad.o(.bss) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers to lto-llvm-fdc1ad.o(.text.UART_WaitOnFlagUntilTimeout) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.SystemInit) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.SystemInit) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SystemInit) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SystemInit) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.SystemInit) refers to lto-llvm-fdc1ad.o(.text.SystemInit) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_0) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_0) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_0) refers to lto-llvm-fdc1ad.o(.text.UART_WaitOnFlagUntilTimeout) for UART_WaitOnFlagUntilTimeout
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_1) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_1) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_1) refers to lto-llvm-fdc1ad.o(.text.UART_WaitOnFlagUntilTimeout) for UART_WaitOnFlagUntilTimeout
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers to lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_1) for [Anonymous Symbol]
-    lto-llvm-fdc1ad.o(.bss) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.bss) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.ARM.use_no_argv) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.ARM.use_no_argv) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.rodata) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.rodata) refers (Special) to scanf_fp.o(.text) for _scanf_real
-    lto-llvm-fdc1ad.o(.data) refers (Special) to _scanf_int.o(.text) for _scanf_int
-    lto-llvm-fdc1ad.o(.data) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.getCurrentMicros) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.getCurrentMicros) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.getCurrentMicros) refers to lto-llvm-cbcce3.o(.bss) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.getCurrentMicros) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.getCurrentMicros) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.getCurrentMicros) refers to lto-llvm-cbcce3.o(.text.getCurrentMicros) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.main) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.main) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.text.HAL_InitTick) for HAL_InitTick
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq) for HAL_RCC_GetSysClockFreq
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq) for HAL_RCC_GetPCLK1Freq
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_1) for OUTLINED_FUNCTION_1
+    lto-llvm-cbcce3.o(.text.main) refers to printfa.o(i.__0printf) for __2printf
+    lto-llvm-cbcce3.o(.text.main) refers to __0scanf.o(.text) for __0scanf
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.text.HAL_Delay) for HAL_Delay
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.text.getCurrentMicros) for getCurrentMicros
+    lto-llvm-cbcce3.o(.text.main) refers to dfltui.o(.text) for __aeabi_ui2d
+    lto-llvm-cbcce3.o(.text.main) refers to dadd.o(.text) for __aeabi_dsub
+    lto-llvm-cbcce3.o(.text.main) refers to ddiv.o(.text) for __aeabi_ddiv
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.text.Error_Handler) for Error_Handler
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.bss) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.data) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.main) refers to lto-llvm-cbcce3.o(.rodata) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.main) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.main) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.main) refers to lto-llvm-cbcce3.o(.text.main) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.Error_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.Error_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.Error_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.Error_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.Error_Handler) refers to lto-llvm-cbcce3.o(.text.Error_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.fputc) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.fputc) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.fputc) refers to lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    lto-llvm-cbcce3.o(.text.fputc) refers to lto-llvm-cbcce3.o(.bss) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.fputc) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.fputc) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.fputc) refers to lto-llvm-cbcce3.o(.text.fputc) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.fgetc) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.fgetc) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.fgetc) refers to lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_0) for OUTLINED_FUNCTION_0
+    lto-llvm-cbcce3.o(.text.fgetc) refers to lto-llvm-cbcce3.o(.bss) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.fgetc) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.fgetc) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.fgetc) refers to lto-llvm-cbcce3.o(.text.fgetc) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.NMI_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.NMI_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.NMI_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.NMI_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.NMI_Handler) refers to lto-llvm-cbcce3.o(.text.NMI_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.HardFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.HardFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HardFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HardFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HardFault_Handler) refers to lto-llvm-cbcce3.o(.text.HardFault_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.MemManage_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.MemManage_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.MemManage_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.MemManage_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.MemManage_Handler) refers to lto-llvm-cbcce3.o(.text.MemManage_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.BusFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.BusFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.BusFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.BusFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.BusFault_Handler) refers to lto-llvm-cbcce3.o(.text.BusFault_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.UsageFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.UsageFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.UsageFault_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.UsageFault_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.UsageFault_Handler) refers to lto-llvm-cbcce3.o(.text.UsageFault_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.SVC_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.SVC_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SVC_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SVC_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SVC_Handler) refers to lto-llvm-cbcce3.o(.text.SVC_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.DebugMon_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.DebugMon_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.DebugMon_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.DebugMon_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.DebugMon_Handler) refers to lto-llvm-cbcce3.o(.text.DebugMon_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.PendSV_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.PendSV_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.PendSV_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.PendSV_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.PendSV_Handler) refers to lto-llvm-cbcce3.o(.text.PendSV_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.SysTick_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.SysTick_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.SysTick_Handler) refers to lto-llvm-cbcce3.o(.bss) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SysTick_Handler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SysTick_Handler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SysTick_Handler) refers to lto-llvm-cbcce3.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.TIM2_IRQHandler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.TIM2_IRQHandler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.TIM2_IRQHandler) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.TIM2_IRQHandler) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.TIM2_IRQHandler) refers to lto-llvm-cbcce3.o(.text.TIM2_IRQHandler) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.HAL_InitTick) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.HAL_InitTick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.HAL_InitTick) refers to lto-llvm-cbcce3.o(.data) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_InitTick) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_InitTick) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_InitTick) refers to lto-llvm-cbcce3.o(.text.HAL_InitTick) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.HAL_Delay) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.HAL_Delay) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.HAL_Delay) refers to lto-llvm-cbcce3.o(.bss) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_Delay) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_Delay) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_Delay) refers to lto-llvm-cbcce3.o(.text.HAL_Delay) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq) refers to lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq) refers to lto-llvm-cbcce3.o(.data) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq) refers to lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.UART_WaitOnFlagUntilTimeout) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.UART_WaitOnFlagUntilTimeout) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.UART_WaitOnFlagUntilTimeout) refers to lto-llvm-cbcce3.o(.bss) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout) refers to lto-llvm-cbcce3.o(.text.UART_WaitOnFlagUntilTimeout) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.SystemInit) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.SystemInit) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SystemInit) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SystemInit) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.SystemInit) refers to lto-llvm-cbcce3.o(.text.SystemInit) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_0) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_0) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_0) refers to lto-llvm-cbcce3.o(.text.UART_WaitOnFlagUntilTimeout) for UART_WaitOnFlagUntilTimeout
+    lto-llvm-cbcce3.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.OUTLINED_FUNCTION_0) refers to lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_0) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_1) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_1) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_1) refers to lto-llvm-cbcce3.o(.text.UART_WaitOnFlagUntilTimeout) for UART_WaitOnFlagUntilTimeout
+    lto-llvm-cbcce3.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.exidx.text.OUTLINED_FUNCTION_1) refers to lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_1) for [Anonymous Symbol]
+    lto-llvm-cbcce3.o(.bss) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.bss) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.ARM.use_no_argv) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.ARM.use_no_argv) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.rodata) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.rodata) refers (Special) to scanf_fp.o(.text) for _scanf_real
+    lto-llvm-cbcce3.o(.data) refers (Special) to _scanf_int.o(.text) for _scanf_int
+    lto-llvm-cbcce3.o(.data) refers (Special) to scanf_fp.o(.text) for _scanf_real
     dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
     dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
     scanf_fp.o(i._is_digit) refers (Special) to iusefp.o(.text) for __I$use$fp
@@ -476,31 +476,31 @@ Section Cross References
 Removing Unused input sections from the image.
 
     Removing startup_stm32f303x8.o(HEAP), (512 bytes).
-    Removing lto-llvm-fdc1ad.o(.text), (0 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.getCurrentMicros), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.main), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.Error_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.fputc), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.fgetc), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.MemManage_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.BusFault_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.UsageFault_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.DebugMon_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.TIM2_IRQHandler), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_InitTick), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_Delay), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.SystemInit), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
-    Removing lto-llvm-fdc1ad.o(.ARM.use_no_argv), (4 bytes).
+    Removing lto-llvm-cbcce3.o(.text), (0 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.getCurrentMicros), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.main), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.Error_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.fputc), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.fgetc), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.MemManage_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.BusFault_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.UsageFault_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.DebugMon_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.TIM2_IRQHandler), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_InitTick), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_Delay), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_RCC_GetSysClockFreq), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.HAL_RCC_GetPCLK1Freq), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.UART_WaitOnFlagUntilTimeout), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.OUTLINED_FUNCTION_0), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.exidx.text.OUTLINED_FUNCTION_1), (8 bytes).
+    Removing lto-llvm-cbcce3.o(.ARM.use_no_argv), (4 bytes).
 
 26 unused section(s) (total 700 bytes) removed from the image.
 
@@ -571,7 +571,7 @@ Image Symbol Table
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
     handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
     init.s                                   0x00000000   Number         0  init.o ABSOLUTE
-    ld-temp.o                                0x00000000   Number         0  lto-llvm-fdc1ad.o ABSOLUTE
+    ld-temp.o                                0x00000000   Number         0  lto-llvm-cbcce3.o ABSOLUTE
     startup_stm32f303x8.s                    0x00000000   Number         0  startup_stm32f303x8.o ABSOLUTE
     RESET                                    0x08000000   Section      392  startup_stm32f303x8.o(RESET)
     .ARM.Collect$$$$00000000                 0x08000188   Section        0  entry.o(.ARM.Collect$$$$00000000)
@@ -617,86 +617,86 @@ Image Symbol Table
     .text                                    0x08001048   Section        0  iusesemig.o(.text)
     .text                                    0x08001048   Section        0  ctype_c.o(.text)
     .text                                    0x08001070   Section        0  dfltui.o(.text)
-    [Anonymous Symbol]                       0x0800108a   Section        0  lto-llvm-fdc1ad.o(.text.BusFault_Handler)
-    [Anonymous Symbol]                       0x0800108c   Section        0  lto-llvm-fdc1ad.o(.text.DebugMon_Handler)
-    Error_Handler                            0x0800108f   Thumb Code     8  lto-llvm-fdc1ad.o(.text.Error_Handler)
-    [Anonymous Symbol]                       0x0800108e   Section        0  lto-llvm-fdc1ad.o(.text.Error_Handler)
-    HAL_Delay                                0x08001099   Thumb Code    16  lto-llvm-fdc1ad.o(.text.HAL_Delay)
-    [Anonymous Symbol]                       0x08001098   Section        0  lto-llvm-fdc1ad.o(.text.HAL_Delay)
-    HAL_InitTick                             0x080010a9   Thumb Code    88  lto-llvm-fdc1ad.o(.text.HAL_InitTick)
-    [Anonymous Symbol]                       0x080010a8   Section        0  lto-llvm-fdc1ad.o(.text.HAL_InitTick)
-    __arm_cp.15_2                            0x08001100   Number         4  lto-llvm-fdc1ad.o(.text.HAL_InitTick)
-    HAL_RCC_GetPCLK1Freq                     0x08001105   Thumb Code    20  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq)
-    [Anonymous Symbol]                       0x08001104   Section        0  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq)
-    __arm_cp.18_0                            0x08001118   Number         4  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq)
-    __arm_cp.18_1                            0x0800111c   Number         4  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq)
-    APBPrescTable                            0x08001120   Number         0  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetPCLK1Freq)
-    HAL_RCC_GetSysClockFreq                  0x08001129   Thumb Code    52  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq)
-    [Anonymous Symbol]                       0x08001128   Section        0  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq)
-    __arm_cp.17_0                            0x0800115c   Number         4  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq)
-    __arm_cp.17_1                            0x08001160   Number         4  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq)
-    aPLLMULFactorTable                       0x08001164   Number         0  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq)
-    aPredivFactorTable                       0x08001174   Number         0  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq)
-    __arm_cp.17_4                            0x08001184   Number         4  lto-llvm-fdc1ad.o(.text.HAL_RCC_GetSysClockFreq)
-    [Anonymous Symbol]                       0x08001188   Section        0  lto-llvm-fdc1ad.o(.text.HardFault_Handler)
-    [Anonymous Symbol]                       0x0800118a   Section        0  lto-llvm-fdc1ad.o(.text.MemManage_Handler)
-    [Anonymous Symbol]                       0x0800118c   Section        0  lto-llvm-fdc1ad.o(.text.NMI_Handler)
-    OUTLINED_FUNCTION_0                      0x0800118f   Thumb Code     8  lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_0)
-    [Anonymous Symbol]                       0x0800118e   Section        0  lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_0)
-    OUTLINED_FUNCTION_1                      0x08001197   Thumb Code    10  lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_1)
-    [Anonymous Symbol]                       0x08001196   Section        0  lto-llvm-fdc1ad.o(.text.OUTLINED_FUNCTION_1)
-    [Anonymous Symbol]                       0x080011a0   Section        0  lto-llvm-fdc1ad.o(.text.PendSV_Handler)
-    [Anonymous Symbol]                       0x080011a2   Section        0  lto-llvm-fdc1ad.o(.text.SVC_Handler)
-    [Anonymous Symbol]                       0x080011a4   Section        0  lto-llvm-fdc1ad.o(.text.SysTick_Handler)
-    [Anonymous Symbol]                       0x080011b0   Section        0  lto-llvm-fdc1ad.o(.text.SystemInit)
-    __arm_cp.20_0                            0x080011bc   Number         4  lto-llvm-fdc1ad.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x080011c0   Section        0  lto-llvm-fdc1ad.o(.text.TIM2_IRQHandler)
-    UART_WaitOnFlagUntilTimeout              0x080011c5   Thumb Code   152  lto-llvm-fdc1ad.o(.text.UART_WaitOnFlagUntilTimeout)
-    [Anonymous Symbol]                       0x080011c4   Section        0  lto-llvm-fdc1ad.o(.text.UART_WaitOnFlagUntilTimeout)
-    [Anonymous Symbol]                       0x0800125c   Section        0  lto-llvm-fdc1ad.o(.text.UsageFault_Handler)
-    [Anonymous Symbol]                       0x08001260   Section        0  lto-llvm-fdc1ad.o(.text.fgetc)
-    [Anonymous Symbol]                       0x08001310   Section        0  lto-llvm-fdc1ad.o(.text.fputc)
-    __arm_cp.3_0                             0x08001390   Number         4  lto-llvm-fdc1ad.o(.text.fputc)
-    getCurrentMicros                         0x08001395   Thumb Code    52  lto-llvm-fdc1ad.o(.text.getCurrentMicros)
-    [Anonymous Symbol]                       0x08001394   Section        0  lto-llvm-fdc1ad.o(.text.getCurrentMicros)
-    __arm_cp.0_0                             0x080013c8   Number         4  lto-llvm-fdc1ad.o(.text.getCurrentMicros)
-    __arm_cp.0_1                             0x080013cc   Number         4  lto-llvm-fdc1ad.o(.text.getCurrentMicros)
-    [Anonymous Symbol]                       0x080013d0   Section        0  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_42                            0x08001764   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_44                            0x0800176c   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_45                            0x08001770   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_46                            0x08001774   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_47                            0x08001778   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_49                            0x08001780   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_50                            0x08001784   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_51                            0x08001788   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_52                            0x0800178c   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_53                            0x08001b30   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_54                            0x08001b34   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_55                            0x08001b38   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_56                            0x08001b3c   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_57                            0x08001b40   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_58                            0x08001ce0   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_59                            0x08001ce4   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_60                            0x08001ce8   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_61                            0x08001cec   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_62                            0x08001cf0   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_5                             0x08001d00   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    AHBPrescTable                            0x08001d04   Number         0  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_7                             0x08001d14   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_10                            0x08001d18   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_18                            0x08001d1c   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_19                            0x08001d20   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_20                            0x08001d24   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    decoder                                  0x08001d28   Number         0  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_22                            0x08001d38   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_23                            0x08001d3c   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_25                            0x08001d48   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_27                            0x08001d50   Number         4  lto-llvm-fdc1ad.o(.text.main)
-    fc2_right_shift                          0x08001d54   Number         0  lto-llvm-fdc1ad.o(.text.main)
-    fc3_weight                               0x08001d68   Number         0  lto-llvm-fdc1ad.o(.text.main)
-    fc3_bias                                 0x08001d90   Number         0  lto-llvm-fdc1ad.o(.text.main)
-    __arm_cp.1_31                            0x08001d98   Number         4  lto-llvm-fdc1ad.o(.text.main)
+    [Anonymous Symbol]                       0x0800108a   Section        0  lto-llvm-cbcce3.o(.text.BusFault_Handler)
+    [Anonymous Symbol]                       0x0800108c   Section        0  lto-llvm-cbcce3.o(.text.DebugMon_Handler)
+    Error_Handler                            0x0800108f   Thumb Code     8  lto-llvm-cbcce3.o(.text.Error_Handler)
+    [Anonymous Symbol]                       0x0800108e   Section        0  lto-llvm-cbcce3.o(.text.Error_Handler)
+    HAL_Delay                                0x08001099   Thumb Code    16  lto-llvm-cbcce3.o(.text.HAL_Delay)
+    [Anonymous Symbol]                       0x08001098   Section        0  lto-llvm-cbcce3.o(.text.HAL_Delay)
+    HAL_InitTick                             0x080010a9   Thumb Code    88  lto-llvm-cbcce3.o(.text.HAL_InitTick)
+    [Anonymous Symbol]                       0x080010a8   Section        0  lto-llvm-cbcce3.o(.text.HAL_InitTick)
+    __arm_cp.15_2                            0x08001100   Number         4  lto-llvm-cbcce3.o(.text.HAL_InitTick)
+    HAL_RCC_GetPCLK1Freq                     0x08001105   Thumb Code    20  lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq)
+    [Anonymous Symbol]                       0x08001104   Section        0  lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq)
+    __arm_cp.18_0                            0x08001118   Number         4  lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq)
+    __arm_cp.18_1                            0x0800111c   Number         4  lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq)
+    APBPrescTable                            0x08001120   Number         0  lto-llvm-cbcce3.o(.text.HAL_RCC_GetPCLK1Freq)
+    HAL_RCC_GetSysClockFreq                  0x08001129   Thumb Code    52  lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq)
+    [Anonymous Symbol]                       0x08001128   Section        0  lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq)
+    __arm_cp.17_0                            0x0800115c   Number         4  lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq)
+    __arm_cp.17_1                            0x08001160   Number         4  lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq)
+    aPLLMULFactorTable                       0x08001164   Number         0  lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq)
+    aPredivFactorTable                       0x08001174   Number         0  lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq)
+    __arm_cp.17_4                            0x08001184   Number         4  lto-llvm-cbcce3.o(.text.HAL_RCC_GetSysClockFreq)
+    [Anonymous Symbol]                       0x08001188   Section        0  lto-llvm-cbcce3.o(.text.HardFault_Handler)
+    [Anonymous Symbol]                       0x0800118a   Section        0  lto-llvm-cbcce3.o(.text.MemManage_Handler)
+    [Anonymous Symbol]                       0x0800118c   Section        0  lto-llvm-cbcce3.o(.text.NMI_Handler)
+    OUTLINED_FUNCTION_0                      0x0800118f   Thumb Code     8  lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_0)
+    [Anonymous Symbol]                       0x0800118e   Section        0  lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_0)
+    OUTLINED_FUNCTION_1                      0x08001197   Thumb Code    10  lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_1)
+    [Anonymous Symbol]                       0x08001196   Section        0  lto-llvm-cbcce3.o(.text.OUTLINED_FUNCTION_1)
+    [Anonymous Symbol]                       0x080011a0   Section        0  lto-llvm-cbcce3.o(.text.PendSV_Handler)
+    [Anonymous Symbol]                       0x080011a2   Section        0  lto-llvm-cbcce3.o(.text.SVC_Handler)
+    [Anonymous Symbol]                       0x080011a4   Section        0  lto-llvm-cbcce3.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x080011b0   Section        0  lto-llvm-cbcce3.o(.text.SystemInit)
+    __arm_cp.20_0                            0x080011bc   Number         4  lto-llvm-cbcce3.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x080011c0   Section        0  lto-llvm-cbcce3.o(.text.TIM2_IRQHandler)
+    UART_WaitOnFlagUntilTimeout              0x080011c5   Thumb Code   152  lto-llvm-cbcce3.o(.text.UART_WaitOnFlagUntilTimeout)
+    [Anonymous Symbol]                       0x080011c4   Section        0  lto-llvm-cbcce3.o(.text.UART_WaitOnFlagUntilTimeout)
+    [Anonymous Symbol]                       0x0800125c   Section        0  lto-llvm-cbcce3.o(.text.UsageFault_Handler)
+    [Anonymous Symbol]                       0x08001260   Section        0  lto-llvm-cbcce3.o(.text.fgetc)
+    [Anonymous Symbol]                       0x08001310   Section        0  lto-llvm-cbcce3.o(.text.fputc)
+    __arm_cp.3_0                             0x08001390   Number         4  lto-llvm-cbcce3.o(.text.fputc)
+    getCurrentMicros                         0x08001395   Thumb Code    52  lto-llvm-cbcce3.o(.text.getCurrentMicros)
+    [Anonymous Symbol]                       0x08001394   Section        0  lto-llvm-cbcce3.o(.text.getCurrentMicros)
+    __arm_cp.0_0                             0x080013c8   Number         4  lto-llvm-cbcce3.o(.text.getCurrentMicros)
+    __arm_cp.0_1                             0x080013cc   Number         4  lto-llvm-cbcce3.o(.text.getCurrentMicros)
+    [Anonymous Symbol]                       0x080013d0   Section        0  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_42                            0x08001764   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_44                            0x0800176c   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_45                            0x08001770   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_46                            0x08001774   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_47                            0x08001778   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_49                            0x08001780   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_50                            0x08001784   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_51                            0x08001788   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_52                            0x0800178c   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_53                            0x08001b30   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_54                            0x08001b34   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_55                            0x08001b38   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_56                            0x08001b3c   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_57                            0x08001b40   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_58                            0x08001ce0   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_59                            0x08001ce4   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_60                            0x08001ce8   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_61                            0x08001cec   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_62                            0x08001cf0   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_5                             0x08001d00   Number         4  lto-llvm-cbcce3.o(.text.main)
+    AHBPrescTable                            0x08001d04   Number         0  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_7                             0x08001d14   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_10                            0x08001d18   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_18                            0x08001d1c   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_19                            0x08001d20   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_20                            0x08001d24   Number         4  lto-llvm-cbcce3.o(.text.main)
+    decoder                                  0x08001d28   Number         0  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_22                            0x08001d38   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_23                            0x08001d3c   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_25                            0x08001d48   Number         4  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_27                            0x08001d50   Number         4  lto-llvm-cbcce3.o(.text.main)
+    fc2_right_shift                          0x08001d54   Number         0  lto-llvm-cbcce3.o(.text.main)
+    fc3_weight                               0x08001d68   Number         0  lto-llvm-cbcce3.o(.text.main)
+    fc3_bias                                 0x08001d90   Number         0  lto-llvm-cbcce3.o(.text.main)
+    __arm_cp.1_31                            0x08001d98   Number         4  lto-llvm-cbcce3.o(.text.main)
     i.__0printf                              0x08001db4   Section        0  printfa.o(i.__0printf)
     i.__scatterload_copy                     0x08001dd4   Section       14  handlers.o(i.__scatterload_copy)
     i.__scatterload_null                     0x08001de2   Section        2  handlers.o(i.__scatterload_null)
@@ -711,30 +711,30 @@ Image Symbol Table
     _printf_pre_padding                      0x08002689   Thumb Code    46  printfa.o(i._printf_pre_padding)
     i._printf_pre_padding                    0x08002688   Section        0  printfa.o(i._printf_pre_padding)
     .constdata                               0x080026b6   Section       64  ctype_c.o(.constdata)
-    upper_half                               0x080026f8   Data         800  lto-llvm-fdc1ad.o(.rodata)
-    [Anonymous Symbol]                       0x080026f8   Section        0  lto-llvm-fdc1ad.o(.rodata)
-    lower_half                               0x08002a18   Data        1120  lto-llvm-fdc1ad.o(.rodata)
-    fc2_bias                                 0x08002e78   Data          80  lto-llvm-fdc1ad.o(.rodata)
-    fc3_right_shift                          0x08002ec8   Data           2  lto-llvm-fdc1ad.o(.rodata)
-    Conv_weight                              0x08002ecc   Data        1020  lto-llvm-fdc1ad.o(.rodata)
+    fc2_bias                                 0x080026f8   Data          80  lto-llvm-cbcce3.o(.rodata)
+    [Anonymous Symbol]                       0x080026f8   Section        0  lto-llvm-cbcce3.o(.rodata)
+    fc3_right_shift                          0x08002748   Data           2  lto-llvm-cbcce3.o(.rodata)
+    lower_half                               0x0800274a   Data        1120  lto-llvm-cbcce3.o(.rodata)
+    upper_half                               0x08002bac   Data         800  lto-llvm-cbcce3.o(.rodata)
+    Conv_weight                              0x08002ecc   Data        1020  lto-llvm-cbcce3.o(.rodata)
     STACK                                    0x10000000   Section     2048  startup_stm32f303x8.o(STACK)
     .data                                    0x20000000   Section        4  stdin.o(.data)
     .data                                    0x20000004   Section        4  stdout.o(.data)
     ungetc_sp                                0x20000008   Data           1  fgetc_b.o(.data)
     .data                                    0x20000008   Section        3  fgetc_b.o(.data)
     ungetc_stack                             0x20000009   Data           2  fgetc_b.o(.data)
-    uwTickPrio                               0x2000000c   Data           4  lto-llvm-fdc1ad.o(.data)
-    [Anonymous Symbol]                       0x2000000c   Section        0  lto-llvm-fdc1ad.o(.data)
-    SystemCoreClock                          0x20000010   Data           4  lto-llvm-fdc1ad.o(.data)
-    input                                    0x20000014   Data        5000  lto-llvm-fdc1ad.o(.bss)
-    [Anonymous Symbol]                       0x20000014   Section        0  lto-llvm-fdc1ad.o(.bss)
-    huart2                                   0x2000139c   Data         136  lto-llvm-fdc1ad.o(.bss)
-    Conv_weight_ram                          0x20001424   Data        1020  lto-llvm-fdc1ad.o(.bss)
-    fc2_weight_ram                           0x20001820   Data        2240  lto-llvm-fdc1ad.o(.bss)
-    result.0                                 0x200020e0   Data           4  lto-llvm-fdc1ad.o(.bss)
-    result.1                                 0x200020e4   Data           4  lto-llvm-fdc1ad.o(.bss)
-    uwTick                                   0x200020e8   Data           4  lto-llvm-fdc1ad.o(.bss)
-    hcrc                                     0x200020ec   Data          36  lto-llvm-fdc1ad.o(.bss)
+    uwTickPrio                               0x2000000c   Data           4  lto-llvm-cbcce3.o(.data)
+    [Anonymous Symbol]                       0x2000000c   Section        0  lto-llvm-cbcce3.o(.data)
+    SystemCoreClock                          0x20000010   Data           4  lto-llvm-cbcce3.o(.data)
+    input                                    0x20000014   Data        5000  lto-llvm-cbcce3.o(.bss)
+    [Anonymous Symbol]                       0x20000014   Section        0  lto-llvm-cbcce3.o(.bss)
+    huart2                                   0x2000139c   Data         136  lto-llvm-cbcce3.o(.bss)
+    Conv_weight_ram                          0x20001424   Data        1020  lto-llvm-cbcce3.o(.bss)
+    fc2_weight_ram                           0x20001820   Data        2240  lto-llvm-cbcce3.o(.bss)
+    result.0                                 0x200020e0   Data           4  lto-llvm-cbcce3.o(.bss)
+    result.1                                 0x200020e4   Data           4  lto-llvm-cbcce3.o(.bss)
+    uwTick                                   0x200020e8   Data           4  lto-llvm-cbcce3.o(.bss)
+    hcrc                                     0x200020ec   Data          36  lto-llvm-cbcce3.o(.bss)
 
     Global Symbols
 
@@ -884,20 +884,20 @@ Image Symbol Table
     __I$use$semihosting$fgetc                0x08001049   Thumb Code     0  iusesemig.o(.text)
     __ctype_lookup                           0x08001049   Thumb Code    34  ctype_c.o(.text)
     __aeabi_ui2d                             0x08001071   Thumb Code    26  dfltui.o(.text)
-    BusFault_Handler                         0x0800108b   Thumb Code     2  lto-llvm-fdc1ad.o(.text.BusFault_Handler)
-    DebugMon_Handler                         0x0800108d   Thumb Code     2  lto-llvm-fdc1ad.o(.text.DebugMon_Handler)
-    HardFault_Handler                        0x08001189   Thumb Code     2  lto-llvm-fdc1ad.o(.text.HardFault_Handler)
-    MemManage_Handler                        0x0800118b   Thumb Code     2  lto-llvm-fdc1ad.o(.text.MemManage_Handler)
-    NMI_Handler                              0x0800118d   Thumb Code     2  lto-llvm-fdc1ad.o(.text.NMI_Handler)
-    PendSV_Handler                           0x080011a1   Thumb Code     2  lto-llvm-fdc1ad.o(.text.PendSV_Handler)
-    SVC_Handler                              0x080011a3   Thumb Code     2  lto-llvm-fdc1ad.o(.text.SVC_Handler)
-    SysTick_Handler                          0x080011a5   Thumb Code    12  lto-llvm-fdc1ad.o(.text.SysTick_Handler)
-    SystemInit                               0x080011b1   Thumb Code    12  lto-llvm-fdc1ad.o(.text.SystemInit)
-    TIM2_IRQHandler                          0x080011c1   Thumb Code     2  lto-llvm-fdc1ad.o(.text.TIM2_IRQHandler)
-    UsageFault_Handler                       0x0800125d   Thumb Code     2  lto-llvm-fdc1ad.o(.text.UsageFault_Handler)
-    fgetc                                    0x08001261   Thumb Code   176  lto-llvm-fdc1ad.o(.text.fgetc)
-    fputc                                    0x08001311   Thumb Code   128  lto-llvm-fdc1ad.o(.text.fputc)
-    main                                     0x080013d1   Thumb Code  2324  lto-llvm-fdc1ad.o(.text.main)
+    BusFault_Handler                         0x0800108b   Thumb Code     2  lto-llvm-cbcce3.o(.text.BusFault_Handler)
+    DebugMon_Handler                         0x0800108d   Thumb Code     2  lto-llvm-cbcce3.o(.text.DebugMon_Handler)
+    HardFault_Handler                        0x08001189   Thumb Code     2  lto-llvm-cbcce3.o(.text.HardFault_Handler)
+    MemManage_Handler                        0x0800118b   Thumb Code     2  lto-llvm-cbcce3.o(.text.MemManage_Handler)
+    NMI_Handler                              0x0800118d   Thumb Code     2  lto-llvm-cbcce3.o(.text.NMI_Handler)
+    PendSV_Handler                           0x080011a1   Thumb Code     2  lto-llvm-cbcce3.o(.text.PendSV_Handler)
+    SVC_Handler                              0x080011a3   Thumb Code     2  lto-llvm-cbcce3.o(.text.SVC_Handler)
+    SysTick_Handler                          0x080011a5   Thumb Code    12  lto-llvm-cbcce3.o(.text.SysTick_Handler)
+    SystemInit                               0x080011b1   Thumb Code    12  lto-llvm-cbcce3.o(.text.SystemInit)
+    TIM2_IRQHandler                          0x080011c1   Thumb Code     2  lto-llvm-cbcce3.o(.text.TIM2_IRQHandler)
+    UsageFault_Handler                       0x0800125d   Thumb Code     2  lto-llvm-cbcce3.o(.text.UsageFault_Handler)
+    fgetc                                    0x08001261   Thumb Code   176  lto-llvm-cbcce3.o(.text.fgetc)
+    fputc                                    0x08001311   Thumb Code   128  lto-llvm-cbcce3.o(.text.fputc)
+    main                                     0x080013d1   Thumb Code  2324  lto-llvm-cbcce3.o(.text.main)
     __0printf                                0x08001db5   Thumb Code    22  printfa.o(i.__0printf)
     __1printf                                0x08001db5   Thumb Code     0  printfa.o(i.__0printf)
     __2printf                                0x08001db5   Thumb Code     0  printfa.o(i.__0printf)
@@ -971,32 +971,32 @@ Memory Map of the image
     0x08001048   0x08001048   0x00000000   Code   RO          386    .text               mc_w.l(iusesemig.o)
     0x08001048   0x08001048   0x00000028   Code   RO          387    .text               mc_w.l(ctype_c.o)
     0x08001070   0x08001070   0x0000001a   Code   RO          448    .text               mf_w.l(dfltui.o)
-    0x0800108a   0x0800108a   0x00000002   Code   RO          407    .text.BusFault_Handler  lto-llvm-fdc1ad.o
-    0x0800108c   0x0800108c   0x00000002   Code   RO          413    .text.DebugMon_Handler  lto-llvm-fdc1ad.o
-    0x0800108e   0x0800108e   0x00000008   Code   RO          395    .text.Error_Handler  lto-llvm-fdc1ad.o
+    0x0800108a   0x0800108a   0x00000002   Code   RO          407    .text.BusFault_Handler  lto-llvm-cbcce3.o
+    0x0800108c   0x0800108c   0x00000002   Code   RO          413    .text.DebugMon_Handler  lto-llvm-cbcce3.o
+    0x0800108e   0x0800108e   0x00000008   Code   RO          395    .text.Error_Handler  lto-llvm-cbcce3.o
     0x08001096   0x08001096   0x00000002   PAD
-    0x08001098   0x08001098   0x00000010   Code   RO          423    .text.HAL_Delay     lto-llvm-fdc1ad.o
-    0x080010a8   0x080010a8   0x0000005c   Code   RO          421    .text.HAL_InitTick  lto-llvm-fdc1ad.o
-    0x08001104   0x08001104   0x00000024   Code   RO          427    .text.HAL_RCC_GetPCLK1Freq  lto-llvm-fdc1ad.o
-    0x08001128   0x08001128   0x00000060   Code   RO          425    .text.HAL_RCC_GetSysClockFreq  lto-llvm-fdc1ad.o
-    0x08001188   0x08001188   0x00000002   Code   RO          403    .text.HardFault_Handler  lto-llvm-fdc1ad.o
-    0x0800118a   0x0800118a   0x00000002   Code   RO          405    .text.MemManage_Handler  lto-llvm-fdc1ad.o
-    0x0800118c   0x0800118c   0x00000002   Code   RO          401    .text.NMI_Handler   lto-llvm-fdc1ad.o
-    0x0800118e   0x0800118e   0x00000008   Code   RO          433    .text.OUTLINED_FUNCTION_0  lto-llvm-fdc1ad.o
-    0x08001196   0x08001196   0x0000000a   Code   RO          435    .text.OUTLINED_FUNCTION_1  lto-llvm-fdc1ad.o
-    0x080011a0   0x080011a0   0x00000002   Code   RO          415    .text.PendSV_Handler  lto-llvm-fdc1ad.o
-    0x080011a2   0x080011a2   0x00000002   Code   RO          411    .text.SVC_Handler   lto-llvm-fdc1ad.o
-    0x080011a4   0x080011a4   0x0000000c   Code   RO          417    .text.SysTick_Handler  lto-llvm-fdc1ad.o
-    0x080011b0   0x080011b0   0x00000010   Code   RO          431    .text.SystemInit    lto-llvm-fdc1ad.o
-    0x080011c0   0x080011c0   0x00000002   Code   RO          419    .text.TIM2_IRQHandler  lto-llvm-fdc1ad.o
+    0x08001098   0x08001098   0x00000010   Code   RO          423    .text.HAL_Delay     lto-llvm-cbcce3.o
+    0x080010a8   0x080010a8   0x0000005c   Code   RO          421    .text.HAL_InitTick  lto-llvm-cbcce3.o
+    0x08001104   0x08001104   0x00000024   Code   RO          427    .text.HAL_RCC_GetPCLK1Freq  lto-llvm-cbcce3.o
+    0x08001128   0x08001128   0x00000060   Code   RO          425    .text.HAL_RCC_GetSysClockFreq  lto-llvm-cbcce3.o
+    0x08001188   0x08001188   0x00000002   Code   RO          403    .text.HardFault_Handler  lto-llvm-cbcce3.o
+    0x0800118a   0x0800118a   0x00000002   Code   RO          405    .text.MemManage_Handler  lto-llvm-cbcce3.o
+    0x0800118c   0x0800118c   0x00000002   Code   RO          401    .text.NMI_Handler   lto-llvm-cbcce3.o
+    0x0800118e   0x0800118e   0x00000008   Code   RO          433    .text.OUTLINED_FUNCTION_0  lto-llvm-cbcce3.o
+    0x08001196   0x08001196   0x0000000a   Code   RO          435    .text.OUTLINED_FUNCTION_1  lto-llvm-cbcce3.o
+    0x080011a0   0x080011a0   0x00000002   Code   RO          415    .text.PendSV_Handler  lto-llvm-cbcce3.o
+    0x080011a2   0x080011a2   0x00000002   Code   RO          411    .text.SVC_Handler   lto-llvm-cbcce3.o
+    0x080011a4   0x080011a4   0x0000000c   Code   RO          417    .text.SysTick_Handler  lto-llvm-cbcce3.o
+    0x080011b0   0x080011b0   0x00000010   Code   RO          431    .text.SystemInit    lto-llvm-cbcce3.o
+    0x080011c0   0x080011c0   0x00000002   Code   RO          419    .text.TIM2_IRQHandler  lto-llvm-cbcce3.o
     0x080011c2   0x080011c2   0x00000002   PAD
-    0x080011c4   0x080011c4   0x00000098   Code   RO          429    .text.UART_WaitOnFlagUntilTimeout  lto-llvm-fdc1ad.o
-    0x0800125c   0x0800125c   0x00000002   Code   RO          409    .text.UsageFault_Handler  lto-llvm-fdc1ad.o
+    0x080011c4   0x080011c4   0x00000098   Code   RO          429    .text.UART_WaitOnFlagUntilTimeout  lto-llvm-cbcce3.o
+    0x0800125c   0x0800125c   0x00000002   Code   RO          409    .text.UsageFault_Handler  lto-llvm-cbcce3.o
     0x0800125e   0x0800125e   0x00000002   PAD
-    0x08001260   0x08001260   0x000000b0   Code   RO          399    .text.fgetc         lto-llvm-fdc1ad.o
-    0x08001310   0x08001310   0x00000084   Code   RO          397    .text.fputc         lto-llvm-fdc1ad.o
-    0x08001394   0x08001394   0x0000003c   Code   RO          391    .text.getCurrentMicros  lto-llvm-fdc1ad.o
-    0x080013d0   0x080013d0   0x000009e4   Code   RO          393    .text.main          lto-llvm-fdc1ad.o
+    0x08001260   0x08001260   0x000000b0   Code   RO          399    .text.fgetc         lto-llvm-cbcce3.o
+    0x08001310   0x08001310   0x00000084   Code   RO          397    .text.fputc         lto-llvm-cbcce3.o
+    0x08001394   0x08001394   0x0000003c   Code   RO          391    .text.getCurrentMicros  lto-llvm-cbcce3.o
+    0x080013d0   0x080013d0   0x000009e4   Code   RO          393    .text.main          lto-llvm-cbcce3.o
     0x08001db4   0x08001db4   0x00000020   Code   RO          280    i.__0printf         mc_w.l(printfa.o)
     0x08001dd4   0x08001dd4   0x0000000e   Code   RO          452    i.__scatterload_copy  mc_w.l(handlers.o)
     0x08001de2   0x08001de2   0x00000002   Code   RO          453    i.__scatterload_null  mc_w.l(handlers.o)
@@ -1010,7 +1010,7 @@ Memory Map of the image
     0x08002688   0x08002688   0x0000002e   Code   RO          290    i._printf_pre_padding  mc_w.l(printfa.o)
     0x080026b6   0x080026b6   0x00000040   Data   RO          388    .constdata          mc_w.l(ctype_c.o)
     0x080026f6   0x080026f6   0x00000002   PAD
-    0x080026f8   0x080026f8   0x00000bd0   Data   RO          439    .rodata             lto-llvm-fdc1ad.o
+    0x080026f8   0x080026f8   0x00000bd0   Data   RO          439    .rodata             lto-llvm-cbcce3.o
     0x080032c8   0x080032c8   0x00000030   Data   RO          451    Region$$Table       anon$$obj.o
 
 
@@ -1029,8 +1029,8 @@ Memory Map of the image
     0x20000004   0x080032fc   0x00000004   Data   RW          331    .data               mc_w.l(stdout.o)
     0x20000008   0x08003300   0x00000003   Data   RW          367    .data               mc_w.l(fgetc_b.o)
     0x2000000b   0x08003303   0x00000001   PAD
-    0x2000000c   0x08003304   0x00000008   Data   RW          440    .data               lto-llvm-fdc1ad.o
-    0x20000014        -       0x000020fc   Zero   RW          437    .bss                lto-llvm-fdc1ad.o
+    0x2000000c   0x08003304   0x00000008   Data   RW          440    .data               lto-llvm-cbcce3.o
+    0x20000014        -       0x000020fc   Zero   RW          437    .bss                lto-llvm-cbcce3.o
 
 
 ==============================================================================
@@ -1040,11 +1040,11 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      3364        356       3024          8       8444      64795   lto-llvm-fdc1ad.o
+      3364        356       3024          8       8444      64846   lto-llvm-cbcce3.o
         36          8        392          0       2048        860   startup_stm32f303x8.o
 
     ----------------------------------------------------------------------
-      3406        364       3464          8      10492      65655   Object Totals
+      3406        364       3464          8      10492      65706   Object Totals
          0          0         48          0          0          0   (incl. Generated)
          6          0          0          0          0          0   (incl. Padding)
 
@@ -1115,8 +1115,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      9518        520       3530         20      10492      67267   Grand Totals
-      9518        520       3530         20      10492      67267   ELF Image Totals
+      9518        520       3530         20      10492      67318   Grand Totals
+      9518        520       3530         20      10492      67318   ELF Image Totals
       9518        520       3530         20          0          0   ROM Totals
 
 ==============================================================================

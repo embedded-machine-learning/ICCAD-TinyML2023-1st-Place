@@ -32,15 +32,16 @@ Please double check these settings with the following images:
 
 
 # Updates since Contest
+The original solution is in `submission.zip` \
 The end of the contest got a bit stressful, so bugs where introduced. 
 They modified how the compiler interpreted the code, which lead to a suboptimal translation. 
 The update removed these inaccuracies, while of course not modifying the results of the neural network. \
 The biggest difference is the usage of the template Layers rather than the classical C type, type dynamic function, which improves readability. 
-By using constant weights, as originally intended, easily interpretable code the compiler can optimize better.  
+By using constant weights, as originally intended and easily interpretable code the compiler can optimize better.  
 
 <pre>
 Program Size: 
-Code=       9458B  →  9518B    (+60)    [Two template instances rather than one function]
+Code=       9458B  →  9518B    (+60)    [Data-type change, two template instances rather than one function]
 RO-data=    3446B  →  3530B    (+84)    [Moved data from RW to RO, and changed one datatype
 RW-data=     236B  →    20B   (-216)       from int32 to int8.]
 ZI-data=   10492B  → 10492B     (±0)

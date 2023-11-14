@@ -40,7 +40,7 @@ void Model_Init()
 {
 	int8_t *addr = &fc2_weight_ram.data[0][0];
 	int32_t p = 0;
-
+	// Lower half word gets directly loaded into ram
 #pragma nounroll
 	for (int32_t q = 0; q < 20 * 112; q += 2)
 	{
@@ -55,6 +55,7 @@ void Model_Init()
 	uint32_t current_stream = 0;
 	unsigned char bit = 0;
 
+	// Upper half word gets decompressed and loaded into ram
 #pragma nounroll
 	for (int32_t index = 0; index < 200 * 32; index++)
 	{
@@ -79,12 +80,14 @@ void Model_Init()
 		}
 	}
 
+	// Loads the convolution weights into ram
 #pragma nounroll
 	for (int32_t i = 0; i < 85 * 3; i++)
 	{
 		*(&Conv_weight_ram.data[0][0] + i) = *(&Conv_weight.data[0][0] + i);
 	}
 
+	// // Loads the fc2 weights into ram
 	// for (int32_t i = 0; i <20*112; i++)
 	// {
 	// 	{
@@ -93,7 +96,7 @@ void Model_Init()
 	// }	
 }
 
-// Only used due to bugs, now removed and therefore this is unused
+// Only used due to bugs, now removed and therefore this is unused and optimized away, only here for consistency.
 void very_ugly_Linear(const int16_t *A, const int8_t *B, const int32_t *bias, const int8_t *right_shift, void (*act)(int32_t, int8_t, void *), uint32_t size_of_datatype, void *out, const int32_t M1_2, const int32_t M2_1, const int32_t M2_2)
 {
 #pragma nounroll

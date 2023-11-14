@@ -12,6 +12,7 @@
 Matrix<85, 3> Conv_weight_ram;
 Matrix<20, 112, int8_t> fc2_weight_ram;
 
+// Only used due to bugs, now removed and therefore this is unused
 void very_ugly_Linear(const int16_t *A, const int8_t *B, const int32_t *bias, const int8_t *right_shift, void (*act)(int32_t, int8_t, void *), uint32_t size_of_datatype, void *out, const int32_t M1_2, const int32_t M2_1, const int32_t M2_2);
 
 void aiRun(const float input[1][1250][1], float result[2])
@@ -92,6 +93,7 @@ void Model_Init()
 	// }	
 }
 
+// Only used due to bugs, now removed and therefore this is unused
 void very_ugly_Linear(const int16_t *A, const int8_t *B, const int32_t *bias, const int8_t *right_shift, void (*act)(int32_t, int8_t, void *), uint32_t size_of_datatype, void *out, const int32_t M1_2, const int32_t M2_1, const int32_t M2_2)
 {
 #pragma nounroll

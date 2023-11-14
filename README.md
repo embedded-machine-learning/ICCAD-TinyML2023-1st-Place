@@ -11,6 +11,8 @@ simply run:
 A new folder `saved_models` is created where the model files are stored.  
 You need to select your optimal model.
 
+We are using our QAT repository https://github.com/embedded-machine-learning/FastQATforPOTRescaler to get a power of two rescaler. It should be published as part of DSD23, however as this is not available yet https://jantsch.se/AxelJantsch/papers/2023/DanielSchnoell-DSD.pdf .
+
 ### Weight export
 Open the notebook `netron_tens/nunpy_to_c_QAT.ipynb`  
 You need to select the model in the first cell, then simply run the whole notebook and a new file `wights_Quant.hpp` is created. This file needs to be copied into the c Project.
